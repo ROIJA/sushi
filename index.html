@@ -1,147 +1,266 @@
 <!doctype html>
 <html lang="">
-
 <head>
 	<meta charset="utf-8">
   	<title>Premier Sushi</title>
   	<meta name="description" content="">
   	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 
-  	<link rel="manifest" href="../website/public/site.webmanifest">
- 	<link rel="apple-touch-icon" href="../website/public/icon.png">
+  	<link rel="manifest" href="site.webmanifest">
+ 	<link rel="apple-touch-icon" href="img/icon.png">
   	<!-- favicon.ico  -->
-    <link rel="icon" type="image/svg+xml" href="../website/public/img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.png">
     <!-- CSS -->
   	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
 	<link rel="stylesheet" href="css/LineIcons.css">
    	<link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/test.css">            
    	<link rel="stylesheet" href="css/base.css">
   	<link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-	<!--==================== HEADER ====================-->	
-    <!-- Header -->
-    <div id="page-overlay"></div>    
-	<!-- Header -->
-    <header class="c-header">
-    
-		<div class="header_inline">
-        	<aside class="inline_btn inline_col"><!--
-            	<button class="btn_link o-btn--1 -height--2 js-scroll-down" data-scroll-dest="signup" data-cursor="1">
-                	<a href="https://www.doordash.com/store/premier-sushi-oregon-city-23594300"><span class="order_text">Order Online</span></a>
-                </button>-->
-            </aside>
 
-            <aside class="inline_logo inline_col">
-            	<a class="logo_link js-scroll-top" href="#top" title="Go to Homepage">
-                	<img class="logo_img" src="img/logo.svg" alt="Premier sushi">
+<!--==================== HEADER ====================-->	
+<header class="nav--1">
+    <div class="nav-bar">
+        <div class="main-container nav_bar_items_wrapper">
+            <div class="nav-bar-wrapper">
+                <a href="javascript:void(0)" class="logo-link inline-block">
+                	<div class="hide-on-mobile"><img src="img/logo.svg" class="img" width="110" ></div>
+                    <div class="site-name">Sushi.Hibachi.Ramen</div>
                 </a>
-            </aside>            
-            <aside class="inline_menu inline_col">
-            	<button class="menu_btn js-toggle-menu" data-cursor="1" aria-label="Open Navigation"> 
-                	<div class="btn_icon">
-                        <div class="icon_to-open"><i></i><i></i><i></i></div>
-                    	<div class="icon_to-exit"><i></i><i></i></div>
+				<!--<div class="hide-on-mobile"><img src="img/logo.svg" class="img" width="123"></div>-->
+                <div class="hide-on-mobile">
+                	<ul class="top-menu">
+                        <li><a href='index.html' class="nav-btn inline-block">Home</a></li>
+                        <li class="dropdown">
+                            <a href='javascript:void(0)' class="nav-btn inline-block">Menus
+                                <span class='toggle'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" 
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                                </span>
+                            </a>                            
+                            <ul class="dropdown-menu">
+                            
+                            	<li class="dropdown">
+                                	<a href='javascript:void(0)' class="nav-btn inline-block">Portland 
+                                    	<span class='toggle2'>
+                                        	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                                            	stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/>
+                                            </svg>
+                                        </span>
+                                    </a>        
+                                  <ul class="dropdown-menu">
+                                	<li><a href='the_heist_menu.html' class="nav-btn inline-block">The Heist</a></li>
+                                	<li><a href='the_zed_menu.html' class="nav-btn inline-block">The ZED</a></li>
+                                  </ul>
+                                </li><!-- end Portland dropdown -->
+                            	<li class="dropdown">
+                                	<a href='javascript:void(0)' class="nav-btn inline-block">Oregon City
+                                    	<span class='toggle2'>
+                                        	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                                            	stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/>
+                                            </svg>
+                                        </span>
+                                    </a>        
+                                  <ul class="dropdown-menu">
+                                	<li><a href='the_heist_menu.html' class="nav-btn inline-block">Oregon City Brewing</a></li>
+                                	<li><a href='the_zed_menu.html' class="nav-btn inline-block">Corner 14</a></li>
+                                  </ul>
+                                </li><!-- end Oregon dropdown -->
+                                                                
+                                <li><a href='battleground_menu.html' class="nav-btn inline-block">Battleground, WA</a></li>
+                                <li><a href='oak_tree_station_menu.html' class="nav-btn inline-block">Oak Tree Station</a></li>
+                                <li><a href='canby_beer_menu.html' class="nav-btn inline-block">Canby Beer library</a></li>
+                            </ul>
+                        </li><!-- end of #menus -->
+                        
+                        <li><a href='locations.html' class="nav-btn inline-block">Locations</a></li>
+                        <li><a href='foods.html' class="nav-btn inline-block">Our Foods</a></li>
+                        <li><a href='contact.html' class="nav-btn inline-block">Contact</a></li>                        
+                	</ul>
+                </div>
+
+                <!-- menu button hide-on-desktop -->
+                <aside class="">
+                	<div class="nav-btn menu-trigger inline-block">
+                        <div class="menu-trigger-label">Menu</div>
+                        <a class="menu-trigger-icon">
+                            <svg width="80" height="8" viewBox="0 0 80 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="80" height="1" fill="currentcolor"></rect>
+                            <rect y="6.5" width="80" height="1" fill="currentcolor"></rect>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="btn_label"><span class="label_text" data-exit-label="Close">Menu</span></div>
-                </button>
-           </aside>
-        </div><!-- /.header_inline -->
-        
-		<!-- start Naviggation -->
-        <div id="nav" class="flex-container align-center align-middle mobile-menu"> 
-       
-            <div class="logo_wrap">
-            	<a class="logo_link--1" href="#top" title="Go to Homepage">
-                	<img class="logo" src="img/logo.svg" alt="Premier sushi">
-                </a>
+               </aside>
+               <!-- end of menu button -->   
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                        <span>Home</span>
-                        </a>
-                    </li>              
-                    <li class="has-children">
-                        <a href="javascript:void(0)"><span>Menus</span></a>
-                  
-                        <ul class="children">
-                          <li><a href="portland_menu.html">Portland</a></li>
-                          <li>
-                            <a href="oregon_brewing_menu.html">Oregon City Brewing</a>
-                            <div class="mini-text">Oregon City Brewing Food Cart Pod 1401 Washington Street, Oregon City,Oregon 97045 </div>
-                          </li>
+        </div>
+    </div>
     
-                          <li>
-                            <a href="corner14_menu.html">Corner 14</a>
-                            <div class="mini-text">Corner 14, 508 14th Street, Oregon City, OR 97045</div>
-                          </li>
-                          <li><a href="submenu1.html">Submenu #4</a></li>
-                        </ul>                    
-                    </li><!-- // .has-children -->
-                    <li class="has-children">
-                        <a href="javascript:void(0)"><span>Gallery</span></a>
-                        <ul class="children">
+    <!-- mobile menu -->   
+    <div class="mobile-menu-positioner">
+        <div class="main-container">
+            <div class="mobile-menu-parent">
+                <aside id="modal" class="slide-menu shadow-small">
+                    <div class="hide-on-desktop"><img src="img/logo.svg" class="image-19"></div>
+                    <a class="nav-btn menu-trigger-icon close-menu inline-block">
+                        <div class="menu-trigger-label close">Close</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" 
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    	</svg>                    
+					</a>                    
+                    <div class="menu menu-drawer--btn-group">
+                        <ul>
+                            <li>
+                                <a href="index.html" class=""><div>Home</div></a>
+                            </li>              
+                            <!-- menus -->
                             <li class="has-children">
-                                <a href="javascript:void(0)">First level</a>
+                                <a href="javascript:void(0)" class="inline-block"><div>Menus</div></a>
                                 <ul class="children">
-                                    <li><a href="link_url">second sub item</a></li>
-                                     <li><a href="link_url">second sub item</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="link_url">first sub item</a></li>
-                            <li><a href="link_url">first sub item</a></li>
-                        </ul>
-                    </li>             
-                    <li> 
-                        <a href="locations.html">
-                            <span>Locations</span>
-                        </a>
-                    </li>
-                    <li><a href="premier-sushi.html"><span><small style="text-transform:none; font-size:1.5rem"></small>About</span></a></li> 
-                    <li>
-                        <a href="#contact">
-                            <span>Contact</span>
-                        </a>
-                    </li> 
-                                  
-                </ul>
-            </nav>
-        </div><!-- /#nav -->
-        <!-- end of Navigation -->
-    </header>
-    <!-- END Header -->
+                                    <li class="has-children">
+                                        <a href="javascript:void(0)">Portland</a>
+                                        <ul class="children">
+                                            <li>
+                                                <a href="the_heist_menu.html" class="">The Heist – Premier Hibachi & Ramen</a>
+                                                <div class="mini-text">4727 SE Woodstock Blvd. Portland, OR 97206</div>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="corner14_menu.html">The ZED – Premier Sushi</a>
+                                                <div class="mini-text">5716 SE 92nd Avenue, Portland OR 97266</div>
+                                            </li>
 
-    <!--==================== HERO ====================-->
-	<section class="c-hero-mega hero-bg -z-index--0">
-		<div class="hero_content -wrapper -wrapper--pad -wrapper--1">
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="javascript:void(0)">Oregon City</a>
+                                        <ul class="children">
+
+                                        	<li>
+                                                <a href="oregon_city_menu.html">Oregon City Brewing – Premier Sushi</a>
+                                                <div class="mini-text">1401 Washington St. Oregon City, OR 97045</div>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="corner14_menu.html">Corner 14 – Premier Hibachi & Ramen</a>
+                                                <div class="mini-text">Corner 14, 508 14th Street, Oregon City, OR 97045</div>
+                                            </li>
+
+                                        </ul>
+                                    </li>                                    
+                                    <li><a href="battleground_menu.html">Battleground – Premier Sushi</a>
+                                        <div class="mini-text">11117 NE 189th St, Battle Ground, WA 98604</div>
+                                    </li>
+                                    <li><a href="oak_tree_station_menu.html">Oak Tree Station – Premier Hibachi & Ramen</a>
+	                                    <div class="mini-text">NW LAKE RD & NW FRIBERG-STRUNK ST, CAMAS, WA 98607 </div>
+                                    </li>
+                                    <li><a href="canby_beer_menu.html">Canby Beer Library – Premier Sushi</a>
+	                                    <div class="mini-text">292 N Holly St Canby OR 97013</div>
+                                    </li>
+
+                                </ul>
+                            </li> 
+                            <!-- // END menus -->                            
+                            <li><a href="locations.html"><div>locations</div></a></li>
+                            <li><a href="foods.html"><div>Our Foods</div></a></li>
+                            <li><a href="contact.html"><div>Contact</div></a></li>
+                        </ul>
+                    </div><!-- menu-drawer--btn-group -->
+                    
+                    <div class="menu-drawer--btn-group">
+                        <div class="mobile-menu--btn-group--header">
+                            <div>Social</div>
+                            <div class="svg-icon w-embed">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                             <title>Social</title>
+                             <g fill="none" stroke="currentcolor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                             <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle>
+                             <circle cx="18" cy="19" r="3"></circle>
+                             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                             </svg>
+                            </div>
+                        </div>
+                        <a href="/" target="_blank" class="inline-block">
+                            <div>Instagram</div>
+                        </a>
+                        <a href="/" target="_blank" class="inline-block">
+                            <div>Facebook</div>
+                        </a>
+                    </div><!-- menu-drawer--btn-group -->
+                    
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->   
+    <div  class="backdrop"></div>
+</header>
+
+    <!-- Hero - Section 
+    ================================================== -->   
+    
+<div class="page-padding">
+
+	<section class="hero-mega hero-wrapper">
+		<div class="hero_content u-wrapper u-wrapper--1 u-wrapper--pad">
         
 			<div class="content_heading">
-				
-                <div class="heading_line" style="translate: none; rotate: none; scale: none; transform: translate(-60px);">
-					<div class="line_title" style=" ">Premier Sushi.</div>
-					<h3 class="heading_sub js-lines">
-                    	<div style="" class="sub_line">
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantiaf
-                            Vokalia and Consonantia, there live the blind texts.
+            	<div class="heading_line">
+                    <h1 class="line_title">
+                        <div>
+                            <span class="capital">P</span>
+                            <span class="label_char">r</span>
+                            <span class="label_char">e</span>
+                            <span class="label_char">m</span>
+                            <span class="label_char">i</span>
+                            <span class="label_char">e</span>
+                            <span class="label_char">r</span>
+                        </div>
+                        <div>
+                            <span class="label_char">.S</span>
+                            <span class="label_char">u</span>
+                            <span class="label_char">s</span>
+                            <span class="label_char">h</span>
+                            <span class="label_char">i</span>
+                        </div>        
+                
+                        <div class="c--1">
+                            <span class="label_char">.H</span>
+                            <span class="label_char">i</span>
+                            <span class="label_char">b</span>
+                            <span class="label_char">a</span>                        
+                            <span class="label_char">c</span>
+                            <span class="label_char">h</span> 
+                            <span class="label_char">i</span> 
+                        </div>
+                        <div class="c--1">
+                            <span class="label_char">.R</span>
+                            <span class="label_char">a</span>
+                            <span class="label_char">m</span>
+                            <span class="label_char">e</span>
+                            <span class="label_char">n</span> 
+                        </div>
+                     
+                    </h1>
+                    
+					<h3 class="heading_sub">
+                    	<div class="sub_line">
+                    	Welcome to Premier Sushi & Hibachi. We are a team of dedicated chefs and staff who are passionate about 
+                        serving fresh and delicious sushi and hibachi to our customers. 
                         </div>
                     </h3>				
-                </div><!-- //.line_title -->
-				
-                <div class="heading_line">
-					<div class="line_title">.Hibachi</div>
-				</div><!-- //.heading_line -->
-                
+                </div><!-- //.heading_line -->
 			</div><!-- //.content_heading -->
 
-			<div class="content_descr-mob js-lines">
-                <div class="sub_line" style="display: block; text-align: start; position: relative;">
-                    <div class="line_inner" style="">			                       
-                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+			<div class="content_descr-mob">
+                <div class="sub_line">
+                    <div class="line_inner">			                       
+                    	Welcome to Premier Sushi & Hibachi. We are a team of dedicated chefs and staff who are passionate about 
+                        serving fresh and delicious sushi and hibachi to our customers. 
                     </div>
                 </div>
                 
@@ -149,341 +268,500 @@
             			
 		</div><!-- //.hero_content -->
 	
-        <div class="hero_bottom u-wrapper u-wrapper--pad u-wrapper--1">
-            <a class="arrow" href="#home" data-scroll-to="#intro" data-cursor="1" data-inview-child="1" 
-            style="translate: none; rotate: none; scale: none; transform: translate(0px); opacity: 1; visibility: inherit;">
-            </a>		
+        <div class="hero_bottom"> 
+            <div class="hero_anchor">
+                <svg class="target_icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9" cy="8.5" r="4" stroke="#8390A2"></circle>
+                    <line x1="9" y1="2.18561e-08" x2="9" y2="17" stroke="#8390A2"></line>
+                    <line x1="17" y1="9" x2="-4.37114e-08" y2="9" stroke="#8390A2"></line>
+                </svg>        
+                <a class="item_link" href="#intro" title="Scroll &amp; discover" target="_self" data-cursor="1" rel="" data-scroll-to="">
+                    <span class="btn_label">Scroll &amp; discover</span>
+                    <div class="btn_bg" data-label="Scroll &amp; discover"></div>
+                </a>              		
+            </div>                 
         </div><!-- //.hero_bottom -->
         
         <div class="c_media" style="translate: none; rotate: none; scale: none; transform: translate(0px); opacity: 1;">
             <picture class="media_img img-crop">
-            <img src="img/hero4.jpg" alt="" class="ls-is-cached lazy">
+            <img src="img/hero4.jpg" alt="" class=" ls-is-cached lazyloaded" loading="lazy" />
             </picture>	
-           <!--
-          <video autoplay="" muted="" loop="" class="media_img" id="hero_video">
-            <source src="img/BAV-Hero.mp4" type="video/mp4">
-          </video>             
-           -->	
+           	<!--
+            <video autoplay="" muted="" loop="" class="media_img" id="hero_video">
+            	<source src="img/Hero.mp4" type="video/mp4">
+            </video>             
+           	-->	
         </div><!-- //.c_media  -->
 
 	</section>
+</div>
 
-<!-- containerWrapper -->
-<div class="containerWrapper">
- 	
-    <!-- Home
+    <!-- marquee - Section 
+    ==================================================  u-comp-def--2 --> 
+    <!--
+    <section class="marquee u-comp-def--2" data-comp="marquee">
+      <div class="marquee_content text-grey">
+        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>    
+        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>    
+        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>
+        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen..</span>    
+      </div>
+    </section>  
+ 	 -->  
+  
+    <!-- About - Section 
     ================================================== -->    
-	<section id="home" class="section cardsBox bg-primary">
-		<div class="home-section-btn--wrapper -wrapper -wrapper--pad -wrapper--1">
-         	<div class="cards">
-            
-              	<div class="card-single">
-                	<a class="" href="#" title="Make a reservation" target="_self">
-                		<span>Make a Reservation</span>
-                	</a>
-					<div>
-                    	<span class="las la-clipboard-list"></span>
-                  	</div>                     
-                </div> <!-- /.card-single -->     
+    <section id="intro" class="section_about">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="space-content">
+                    
+                    <div class="flex-0">
+                        <h2 class="heading-large orange">About Premier Sushi</h2>
+                        <div class="text-size-large margin-xs"> 
+                        	Our food cart was founded to provide an authentic <span class="hover-text"> Japanese sushi and hibachi </span> 
+                            experience that combines traditional techniques with a modern twist.                            
+                        </div>
+                    </div><!-- /.flex-1 -->            
+                                
+                    <div class="grid first">
+                   		<div class="spacer"></div>
+                        <p class="text-size-large">
+							We use only the freshest ingredients and take
+                            great care in preparing each dish with precision and attention to detail.                        
+                            <br class="mb-20">
+                            Our menu features a variety of <span class="hover-text">sushi rolls,</span> 
+                            <span class="hover-text">burritos,</span> 
+                            <span class="hover-text">bowls,</span>
+                            <span class="hover-text">burgers</span>  <span class="hover-text">and donuts,</span>
+                            and hibachi Japanese grill menus. Whether you're a sushi/hibachi lover or trying it for the first time, 
+                            we have something for everyone. Our chefs are always experimenting with new flavors and ingredients to keep the menu exciting and fresh.
+                            <br class="mb-20" />
+                            At our food cart, we believe that great food should be paired with excellent service. 
+                            Our staff is knowledgeable, friendly, and always willing to go the extra mile to ensure that our customers have a 
+                            wonderful dining experience.
+                            <br class="mb-20">
+                            We also offer catering services for events and special occasions. Whether you're planning a corporate event or a birthday party, 
+                            we can provide delicious sushi platters and other Japanese specialties that will impress your guests.<br><br>
+                           <small class="heading orange">Thank you for choosing us. We look forward to serving you soon!</small><br>
+                        </p>
+                        <div id="right_svg" class="sticky first">
+                            <div class="cubes w-embed">
+                            	<img src="img/right_svg.svg">		
+                        	</div>
+                        </div><!-- /#right_div --> 
+                    </div><!-- /.grid first -->
+                </div> <!-- /.space-content -->  
+            </div><!-- /.container-large -->  
+        </div><!-- /.page-padding -->
+    </section>
 
-              	<div class="card-single">
-                	<a class="" href="#" title="Make a reservation" target="_self">
-                		<span>Order Pickup</span>
-                	</a>
-                  	<div>
-                    	<span class="las la-thumbs-up"></span>
-                  	</div>                    
-                </div><!-- /.card-single -->      
-              	<div class="card-single">
-                	<a class="" href="#" title="Make a reservation" target="_self">
-                		<span>Order Delivery</span>
-                	</a>
-                  	<div>
-                    	<span class="las la-truck"></span>
-                        
-                  	</div>                    
-                </div><!-- /.card-single -->    
-                    	
-			</div><!-- /.cards --> 
-		</div><!-- /.container -->
-	</section>   
+    <!-- Order - bottom part
+    ================================================== -->  
+	<div class="page-padding">
+        <div class="order pb-100 container-small">
+        <!-- flex-1 pb-100 <h2 class="heading-large" style="color: var(--earth);">Make Order</h2> -->
+        
+         	<div> 
+                <a href="/#" target="_self" data-cursor="1" rel="" class="btn-round w-inline-block">
+                    <div>Order Pickup <span class="las la-thumbs-up"></span></div>
+                </a>
+                
+                <a href="/#" target="_self" data-cursor="1" rel="" class="btn-round primary w-inline-block">
+                    <div>Order Delivery <span class="las la-truck"></span></div>
+                  </a>
+         </div> 
+        </div><!-- /.order -->            
+	</div><!-- /.page-padding --> 
+   
+    <div class="spacer"></div>
     
     <!-- Location - section { bg-secondary }
     ================================================== -->
-	<div class="location bg-secondary">
-
-        <div class="wrap width-1080 -wrapper -wrapper--pad">
-			<h2 class="heading-text center split-right">Locations</h2>
-			<p class="font-32 width-860">Premier Sushi - locations</p>
-			<a href="locations.html" class="button--1 -color--1">
-            	<span class="btn_label">Visit us&nbsp;</span>            
-            </a>
-		</div>
+	<section class="location-section location-element location-carousel col-mr-0 flex">
+    
+        <div class="location-header">
+            <h3 class="heading-large text-grey">Locations</h2>
+            <p class="font-heading f-ui-2">Premier Sushi - locations</p>
+            <a href="locations.html" class="button--1 -color--1 mt-8">
+                <span class="btn_label">Visit us&nbsp;</span>            
+            </a>            
+        </div>
             
-		<section class="location-section location-element location-carousel col-mr-0">
-       		<div class="location-container">
-            
-            	<div class="location-row">
-					<div class="location-column location-element"> 
-	                	<div class="location-widget-wrap">
+    	<div class="location-container">
+            <div class="location-row">
+				<div class="location-column location-element"> 
+	               	<div class="location-widget-wrap">
 
-	                        <div class="location-element location-widget--carouselslider">
-                            	<div class="location-widget-container">
-	                            	<div id="Carousel-1" class="carousel-slider-wrapper relative swiper-container swiper-container-initialized swiper-container-horizontal">
-                                        
-	                                	<div class="swiper-wrapper image-slider slider" style="transform: translate3d(-1124.4px, 0px, 0px); transition-duration: 0ms;">
-                                            	
-                                        	<div class="swiper-slide swiper-slide-prev" style="margin-right: 30px;">
-                                                <div class="swiper-slide-img-holder no-link">
-                                                	<img src="img/location_01.jpg" class="image-slide-img" alt="" loading="lazy">
-                                                </div>
-                                                <p class="swiper-slide-number">01</p>
-                                                <p class="swiper-slide-caption-text">Portland</p>
-                                                <figcaption class="f-ui-1 lg:grid-col-span-3 xl:grid-col-span-2 left-0 order-2 lg:order-1 mt-28 lg:mt-0">
-                                                    Oregon City   Brewing<br/>
-                                                    Food Cart Pod 1401 Washington Street, Oregon City,Oregon 97045.
-                                                </figcaption>   
-                                                                                             
-                                            </div><!-- /.swiper-slide -->
+	        	         <div class="location-element location-widget--carouselslider">
+                           	<div class="location-widget-container">
+	                           	<div class="carousel-slider-wrapper relative swiper-container swiper-container-initialized swiper-container-horizontal" 
+                                data-speed="2000" data-auto="false">
+	                            	<div class="swiper-wrapper image-slider" style="transform: translate3d(-1124.4px, 0px, 0px); transition-duration: 0ms;">
+                                          	
+                                    	<div class="swiper-slide" style="margin-right: 30px;">
+                                        	<div class="swiper-slide-img-holder no-link">
+                                              	<img src="img/location_01.jpg" class="image-slide-img lazyload" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">01</p>
+                                            <p class="swiper-slide-caption-text">The Heist</p>
+                                            <span><b class="text-grey">&nbsp;Premier Hibachi & Ramen</b>, Portland.</span>
+                                        </div><!-- /.swiper-slide -->
                                                 
-                                            <div class="swiper-slide swiper-slide-active" style="margin-right: 30px;">
-                                            	<div class="swiper-slide-img-holder no-link">
-                                                	<img src="img/location_02.jpg" class="image-slide-img" alt="" loading="lazy">
-                                                </div>
-                                                <p class="swiper-slide-number">02</p>
-                                                <p class="swiper-slide-caption-text">Oregon City Brewing</p>
+                                        <div class="swiper-slide" style="margin-right: 30px;">
+                                        	<div class="swiper-slide-img-holder no-link">
+                                            	<img src="img/location_02.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">02</p>
+                                            <p class="swiper-slide-caption-text">The ZED</p>
+                                            <span><b>&nbsp;Premier Sushi</b>, Portland.</span>
+                                        </div><!-- /.swiper-slide -->
+                                                                                        
+                                        <div class="swiper-slide" style="margin-right: 30px;">
+                                        	<div class="swiper-slide-img-holder no-link">
+                                              	<img src="img/location_03.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">03</p>
+                                            <p class="swiper-slide-caption-text">Oregon City Brewing</p>
+                                            <span><b>&nbsp;Premier Sushi</b>, Oregon City, OR.</span>
+                                        </div><!-- /.swiper-slide -->
                                         
-                                                <figcaption class="f-ui-1 lg:grid-col-span-3 xl:grid-col-span-2 left-0 order-2 lg:order-1 mt-28 lg:mt-0">
-                                                    Oregon City   Brewing<br/>
-                                                    Food Cart Pod 1401 Washington Street, Oregon City,Oregon 97045.
-                                                </figcaption>                                                
-                                                                                 
-                                            </div><!-- /.swiper-slide -->
-                                                
-                                            <div class="swiper-slide swiper-slide-active" style="margin-right: 30px;">
-                                                <div class="swiper-slide-img-holder no-link">
-                                                 	<img src="img/location_03.jpg" class="image-slide-img" alt="" loading="lazy">
-                                                </div>
-                                                <p class="swiper-slide-number">03</p>
-                                                <p class="swiper-slide-caption-text">Corner 14</p>
-                                                <figcaption class="f-ui-1 lg:grid-col-span-3 xl:grid-col-span-2 left-0 order-2 lg:order-1 mt-28 lg:mt-0">
-                                                    Corner 14<br/>
-                                                    Corner 14, 508 14th Street, Oregon City, OR 97045.
-                                                </figcaption>                                                 
-                                            </div><!-- /.swiper-slide -->
+                                        <div class="swiper-slide" style="margin-right: 30px;">
+                                            <div class="swiper-slide-img-holder no-link">
+                                             	<img src="img/location_04.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">04</p>
+                                            <p class="swiper-slide-caption-text">Corner 14</p>
+                                            <span><b>&nbsp; Premier Hibachi & Ramen</b>, Oregon City, OR.</span>
+                                        </div><!-- /.swiper-slide -->                                        
                                             
-                                            <div class="swiper-slide swiper-slide-active" style="margin-right: 30px;">
-                                                <div class="swiper-slide-img-holder no-link">
-                                                 	<img src="img/location_02.jpg" class="image-slide-img" alt="" loading="lazy">
-                                                </div>
-                                                <p class="swiper-slide-number">04</p>
-                                                <p class="swiper-slide-caption-text">Location 4</p>
-                                                <figcaption class="f-ui-1 lg:grid-col-span-3 xl:grid-col-span-2 left-0 order-2 lg:order-1 mt-28 lg:mt-0">
-                                                    location 4<br/>
-                                                    Address information
-                                                </figcaption>                                                
-                                                                                 
-                                            </div><!-- /.swiper-slide -->
-                                                                                            
-                                        </div><!-- /.swiper-wrapper -->
+                                        <div class="swiper-slide" style="margin-right: 30px;">
+                                            <div class="swiper-slide-img-holder no-link">
+                                             	<img src="img/location_05.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">05</p>
+                                            <p class="swiper-slide-caption-text">Battleground</p>
+                                            <span><b>&nbsp; Premier Sushi</b>, Battleground, WA.</span>
+                                        </div><!-- /.swiper-slide -->
                                         
-                                        <div class="clear"></div>
-                                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        <div class="swiper-slide" style="margin-right: 30px;">
+                                            <div class="swiper-slide-img-holder no-link">
+                                             	<img src="img/location_06.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">06</p>
+                                            <p class="swiper-slide-caption-text">Oak Tree Station</p>
+                                            <span><b>&nbsp; Premier Hibachi & Ramen</b>, Camas, WA.</span>
+                                        </div><!-- /.swiper-slide -->
                                         
-                                    </div><!-- /.carousel-slider-wrapper -->
+                                         <div class="swiper-slide" style="margin-right: 30px;">
+                                            <div class="swiper-slide-img-holder no-link">
+                                             	<img src="img/location_07.jpg" class="image-slide-img" alt="" loading="lazy">
+                                            </div>
+                                            <p class="swiper-slide-number">07</p>
+                                            <p class="swiper-slide-caption-text">Canby Beer Library</p>
+                                            <span><b>&nbsp; Premier Sushi</b>, Canby, OR.</span>
+                                        </div><!-- /.swiper-slide -->
+                                                                                           
+                                    </div><!-- /.swiper-wrapper -->
+                                	<div class="clear"></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                </div><!-- /.carousel-slider-wrapper -->
                                         
-                                    <div class="swiper-scrollbar swiper-scrollbar-Carousel-1" style="transition-duration: 0ms;">
-                                    	<div class="swiper-scrollbar-drag" style="transform: translate3d(240px, 0px, 0px); width: 120px; transition-duration: 0ms;"></div>
-                                	</div><!-- /.swiper-scrollbar -->
-                                        
-                            	</div><!-- /.location-widge-container-->
+                                <div class="swiper-scrollbar swiper-scrollbar-Carousel-1">
+                                	<div class="swiper-scrollbar-drag"></div>
+                               	</div><!-- /.swiper-scrollbar -->
                                 
-                                
-                         	</div><!-- /.location-element -->
-                        </div><!-- /.location-wiget-wrap -->
-                                 
-                	</div><!-- /.location-colum -->
-                </div><!-- /.location-row -->
-                
-           	</div><!--/. location-container -->
-          
-		</section>
-    </div><!-- /.location -->
-    
+                            </div><!-- /.location-widge-container-->
+                	   	</div><!-- /.location-element -->
+            	    </div><!-- /.location-wiget-wrap -->
+              	</div><!-- /.location-colum -->
+        	</div><!-- /.location-row -->
+        </div><!--/. location-container -->
+	</section>
     
 
-    <!-- Gallery - section
+    <!-- Our Foods - section
     ================================================== -->
-	<section class="u-z-index--1 u-z-index--0 pt-100 pb-50 bg-hero">
-
-    	<!--- heading -->
-		<div class="wrap u-wrap u-wrap">
-			<h2 class="heading-text" style="color:#f5f5f5;">Gallery</h2>
-			<p class="font-32 width-860" style="color:#f5f5f5;">Discover how has changed Lorem Ipsum is dummy text.</p>
- 			<div class="card-controls">
-				<span class="story-prev prev" aria-controls="card-slider" tabindex="-1" data-controls="prev">
-            	    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.5 20L25 7.5L26.75 9.25L16 20L26.75 30.75L25 32.5L12.5 20Z" fill="white"></path></svg>
-                </span>
-                    
-				<span class="story-next next" aria-controls="card-slider" tabindex="-1" data-controls="next">
-                	<svg width="40" height="40" 
-                        viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    	<path d="M27.5 20L15 32.5L13.25 30.75L24 20L13.25 9.25L15 7.5L27.5 20Z" fill="white"></path>
-                    </svg>
-                </span>
-			</div>   
-		</div><!--- end of heading -->
-		
-        <!--- slider -->
-        <div class="container_card -wrapper -wrapper--pad -wrapper--1">
-            <div class="card-slider" style="cursor:grab">
-                 <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/gallery/1.jpg" class="card_item-image lazyloaded">
-                        </picture>
-                        <div class="card__title-wrapper"><h3 class="card__title">Sushi Rolls</h3></div>
-                        <div class="card_description">
-                            <p>
-                                What is Lorem Ipsum?
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                    </article>
-                </div><!-- /.card-wrapper -->
-
-                <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/bg-img/11.jpg" class="card_item-image lazyloaded">
-                        </picture>
-                        <<div class="card__title-wrapper"><h3 class="card__title">Hibachi</h3></div>
-                        <div class="card_description">
-                            <p>Salmon, *spicy tuna, imitation crab, seaweed salad, cucumber and spicy mayo</p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                    </article>
-                </div><!-- /.card-wrapper -->
-                
-                <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/bg-img/13.jpg" class="card_item-image lazyloaded">
-                        </picture>
-                        <div class="card__title-wrapper"><h3 class="card__title">Ramen</h3></div>
-                        <div class="card_description">
-                            <p>
-                                What is Lorem Ipsum?
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                        
-                    </article>
-                </div><!-- /.card-wrapper -->  
-                
-                <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/gallery/8.jpg" class="card_item-image lazyloaded" >
-                        </picture>
-                        <div class="card__title-wrapper"><h3 class="card__title">Sushi Bowls</h3></div>
-                        <div class="card_description">
-                            <p>*Salmon, *spicy tuna, imitation crab, seaweed salad, cucumber and spicy mayo.</p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                    </article>
-                </div><!-- /.card-wrapper -->    
-                <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/gallery/2.jpg" class="card_item-image lazyloaded" >
-                        </picture>
-                        <div class="card__title-wrapper"><h3 class="card__title">Burritos</h3></div>
-                        <div class="card_description">
-                            <p>
-                                What is Lorem Ipsum?
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                    </article>
-                 
-                </div><!-- /.card-wrapper -->  
-                <div class="card-wrapper u-comp-def--2">
-                    <article class="card">
-                        <picture class="card__background">
-                            <img src="img/bg-img/12.jpg" class="card_item-image lazyloaded" >
-                        </picture>
-                        <div class="card__title-wrapper"><h3 class="card__title">Sashimi</h3></div>
-                        <div class="card_description">
-                            <p>
-                                What is Lorem Ipsum?
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                            <a class="card_website" href="" title="Visit website" target="_blank" data-cursor="1" rel=" noopener">
-                                <span class="btn_label"> Visit link </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" 
-                                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd">
-                                <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g>
-                                </svg>
-                            </a>                    
-                        </div><!-- /.card_description -->
-                    </article>
-                </div><!-- /.card-wrapper -->                                                  
-            
-            </div><!-- /.card-slider -->
-        </div><!-- /.container_card --> 
-        <!--- end of slider -->   
-        
-        <!-- view All  -->
-    	<div class="card_slider-button div-block-13">
-        	<a class="button--1" href="gallery.html" title="go to gallery" target="_self" data-cursor="1" rel="">
-            	<span class="btn_label">View All Photos</span>
-            </a>        					    
-        </div><!-- /.card_slider-button -->   
-   		
-    </section>
     
-</div><!--- /.containerWrapper -->
+	<section class="food-grid u-z-index--1 u-z-index--0 pt-50 bg-hero" data-comp="food-grid"><!-- u-comp-def--1 -->
 
+		<div class="ml-10 page-padding">
+			<h2 class="heading-large text-grey">Our Foods</h2>
+			<p class="font-32 text-white">Discover our foods.</p>
+		</div>
+         
+  		<div class="food_grid-wrapper food_grid-wrapper u-wrapper u-wrapper--pad u-wrapper--1"> 
+        	
+            <div class="food_grid-content card-slider has-viewed" data-inview="" data-inview-scope="> *" style="cursor:grab">
+        
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Sushi Rolls</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <p class="description">
+							lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+                        </p>      
+                      </div>
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">rolls</div>
+                        <div class="food_item-tab">classic</div>
+                        <div class="food_item-tab">Burritos</div>
+                        <div class="food_item-tab">Donuts</div>
+                        <div class="food_item-tab">Burger</div>  
+                        <div class="food_item-tab">Jambo roll</div>    
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image lazyloaded" src="img/foods/1.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Hibachi</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <b>Japanese SteakHouse.</b> 
+                        <p class="description">
+                          Japanese SteakHouse. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+                          from 45 BC, making it over 2000 years old. 
+                        </p>      
+                      </div>
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">Combo</div>
+                        <div class="food_item-tab">Superme</div>
+                        <div class="food_item-tab">Bento</div>
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image lazyloaded" src="img/foods/hibachi.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Ramen</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <p class="description">
+                        The sushi burrito or sushirrito is a type of Japanese-American fusion cuisine. It is typically prepared by rolling sushi ingredients
+                         such as fish and vegetables in a wrap and serving like a burrito.                         
+ 						</p>      
+                      </div>
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">ramen</div>      
+                        <div class="food_item-tab">no Msg</div>
+                        <div class="food_item-tab">Gluten free</div>
+                        <div class="food_item-tab">Vegan</div>
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image lazyloaded" src="img/foods/ramen.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+                
+
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Bento</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <p class="description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>      
+                      </div>
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">Sushi donut</div>
+                        <div class="food_item-tab">gluten free</div>
+                        <div class="food_item-tab">vegan</div>
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image lazyloaded" src="img/foods/bento.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+                
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Sushi Platter</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <p class="description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>      
+                      </div>
+                      
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">sushi</div>
+                        <div class="food_item-tab">glutern free</div>
+                        <div class="food_item-tab">vegan</div>
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image ls-is-cached lazyloaded" src="img/foods/18.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+                <div class="food-item grid-item" data-comp="example">
+                  <div class="food_item-content"> 
+                    <div class="food_item-content-left">
+                      <div class="food_item-title">
+                        <h3 class="food_name">Nigiri& sashimi</h3>      
+                      </div>
+                    </div>
+                    
+                    <div class="food_item-content-right">
+                      <div class="food_item-description">
+                        <p class="description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>      
+                      </div>
+                      
+                      <!--
+                      <div class="food_item-link">
+                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
+                            <span class="btn_label">visit link</span>
+                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
+                            </path>
+                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
+                            </svg>
+                            <div class="btn_bg" data-label="/#"></div>
+                        </a>      
+                      </div>-->
+                      <div class="food_item-tabs">
+                        <div class="food_item-tab">tuna</div>
+                        <div class="food_item-tab">yellowtail</div>
+                        <div class="food_item-tab">Seared tuna</div>
+                        <div class="food_item-tab">salmon</div>
+                        <div class="food_item-tab">avocado</div>
+                      </div>
+                    </div>
+                    <div class="food_item-background">
+                      <img class="food_item-image ls-is-cached lazyloaded" src="img/foods/sashimi.jpg" alt="" data-src="" decoding="async"> 
+                    </div>
+                  </div>
+                </div><!-- /.grid-item -->
+      
+    		</div><!-- /.food_grid-content -->
+ 		
+        	<!-- Food Controls Prev/Next  -->
+            <div class="foods-controls justify-start">
+        		<span class="btn--3 prev -dir--left" aria-controls="slider" tabindex="-1" data-controls="prev"></span>
+        		<span class="btn--3 next" aria-controls="slider" tabindex="-1" data-controls="next"></span>
+			</div>             
+            <!-- End of Food Controls Prev/Next  -->             
+            
+        	<!-- view All  -->
+    		<div class="card_slider-button text-center pt-50">
+        		<a class="button--1" href="foods.html" title="go to gallery" target="_self" data-cursor="1" rel="">
+            		<span class="btn_label">View All</span>
+            	</a>        					    
+        	</div><!-- /.card_slider-button -->   
+                    
+  		</div>
+	</section> 
 
     <!-- Delivery App logos - section 
     ================================================== -->
-    <section id="deliveryApp" class="-wrapper -wrapper--pad -wrapper--1 bg-primary">
-        <div id="logos" class="wrap width-1300">
+    <section id="deliveryApp" class="section">
+    <div class="page-padding">
+        <div id="logos" class="wrap w-1080">
             <div>
                 <p>To figure out what you have to order from our menus.</p>
                 <span>(Order from delivery app)</span>
@@ -504,199 +782,110 @@
                 <!-- DoorDash -->                              
                 <div>
                     <a class="item_link" href="doordash.link" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">                
-    <svg width="200" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DoorDash</title><path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H.584A.589.589 0 00.17 6.184L3.894 9.93a1.752 1.752 0 001.242.516h12.049a1.554 1.554 0 11.031 3.108H8.91a.589.589 0 00-.415 1.003l3.725 3.747a1.75 1.75 0 001.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413" fill="#000"/></svg> </a>               </div> 
+    <svg width="200" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DoorDash</title><path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H.584A.589.589 0 00.17 6.184L3.894 9.93a1.752 1.752 0 001.242.516h12.049a1.554 1.554 0 11.031 3.108H8.91a.589.589 0 00-.415 1.003l3.725 3.747a1.75 1.75 0 001.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413" fill="#000"/></svg> 
+    				</a>              
                 </div>
             </div><!-- end of logo-list -->
       
-        </div><!-- #logos -->        
+        </div><!-- #logos --> 
+        </div>       
     </section>
-    
+
     <!-- Follow Area Start - section 
     ================================================== -->
-    
-    <section id="#instagram" class="follow-area bg-primary">
+    <section id="#instagram" class="follow-area">
 	
         <!-- Follow Area Start -->
-        <div class="-wrapper -wrapper--pad -wrapper--1">
-            <div class="row">
-                <div class="col-12">
-                
-                    <div class="text-center">
-                        <h2 class="font-heading f-ui-2">Lift off with us on social.</h2><!--Lift off with us on social-->
-                      
-                        <p class="mb-10"><a href="#" target="_blank" rel="noreferrer noopener">@premier_sushi</a>&nbsp;&nbsp;#premier_sushi</p>
-                        
-                        <a class="instagram_logo" href="#" target="_blank" rel="noreferrer nofollow">
+		<div class="text-center pt-50">
+        	<h2 class="heading">Lift off with us on social.</h2><!--Lift off with us on social-->
+            <p class="mb-10"><a href="#" target="_blank" rel="noreferrer noopener">@premier_sushi</a>&nbsp;&nbsp;#premier_sushi</p>
+            <a class="instagram_logo" href="#" target="_blank" rel="noreferrer nofollow">
                             
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                <title>Instagram logo</title>
-                                <path
-                                    fill="currentColor"
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                                ></path>
-                            </svg>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
+            	<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                  	<title>Instagram logo</title>
+                   <path fill="currentColor"
+                   	d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                  </path>
+              	</svg>
+            </a>
         </div>
     	<!-- End of Follow Area End -->
         
     	<!-- Instagram Feed Area - section	-->
+        <!--
         <div class="container_1">
           <aside class="carousel">
-            
             <div class="carousel__wrapper">
-            
-              <div class="item" id="slide-0"><img src="img/gallery/10.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-1"><img src="img/gallery/1.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-2"><img src="img/gallery/2.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-3"><img src="img/gallery/3.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-4"><img src="img/gallery/4.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-5"><img src="img/gallery/5.jpg" alt="" width="418" height="418"/></div>
-              <div class="item" id="slide-6"><img src="img/gallery/6.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-0"><img src="img/foods/10.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-1"><img src="img/foods/1.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-2"><img src="img/foods/2.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-3"><img src="img/foods/3.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-4"><img src="img/foods/4.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-5"><img src="img/foods/5.jpg" alt="" width="418" height="418"/></div>
+              <div class="item" id="slide-6"><img src="img/foods/6.jpg" alt="" width="418" height="418"/></div>
             </div>
           </aside>
           <article class="instagram">
             <section class="instagram__media">
               <div class="img"></div>
             </section>
-          </article>
+          </article>-->
         </div>
     </section>
-
     
     <!-- Footer - section
     ================================================== -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="-wrapper -wrapper--pad -wrapper--1">
-            
-            <div class="footer_main footer_row">
-                
-                <aside class="main_logo">
-                    <a class="logo_anchor " href="#top" data-scroll-to="" title="Scroll to top of page" target="_self" data-cursor="1">
-                        Premier Sushi	
-                    </a>
-                </aside>
-                
-                <aside class="main_menu">
-    
-                <ul class="menu_links -menu" role="menu">
-                
-                    <li class="links_item" role="menuitem" data-inview-child="1" style="translate: none; rotate: none; scale: none; 
-                    transform: translate(0px); opacity: 1; visibility: inherit;">
-                        <a class="item_link link-btn--2" href="#0" title="Return to Home" target="_self">
-                            <span class="btn_label">Home</span>
-                   
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
-                                style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#FFF"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                    
-                    <li class="links_item" role="menuitem" style="translate: none; rotate: none; scale: none; transform: translate(0px); opacity: 1; visibility: inherit;">
-                        <a class="item_link link-btn--2" href="#" title="Go to Menus page" target="_self">
-                            <span class="btn_label">Menu</span>
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                    
-                    <li class="links_item" role="menuitem" style="translate: none; rotate: none; scale: none; transform: translate(0px); opacity: 1; visibility: inherit;">
-                        <a class="item_link link-btn--2" href="../website/public/locations.html" title="Go to Location page" target="_self">
-                            <span class="btn_label">Locations</span>
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>                
-                </ul>
-                <ul class="menu_links -socials">
-                    <li class="links_item">
-                        <a class="item_link link-btn--2 -hide-arrow" href="https://www.instagram.com/_premier_sushi_/?hl=en" title="Follow on Instagram"
-                         target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">
-                            <span class="btn_label">Instagram</span>
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
-                                style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                 
-                    <li class="links_item">
-                        <a class="item_link link-btn--2 -hide-arrow" href="https://www.facebook.com/PremierSushiOCB/" 
-                        title="Follow on Facebook" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">
-                            <span class="btn_label">Facebook</span>
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
-                                style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="links_item">
-                        <a class="item_link link-btn--2 -hide-arrow" href="#" 
-                        title="email" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">
-                            <span class="btn_label">e-mail</span>
-                            <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
-                                style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff"></path></g>
-                                <defs>
-                                    <clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>                    
-                </ul>
-                </aside>
-                
+    <footer class="footer-section">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="padding-vertical padding-large">
+                    <div class="layout-grid footer_top-wrapper">
+                        <div id="left_footer" class="footer_left-wrapper">
+                            <div class="secondary"><a href="#" class="footer-text-link">contact@premier-sushi.com</a><br>© Premier Sushi 2023</div>
+                        </div>
+                        <div id="right_footer">
+                            <h2 class="heading-large text-color-white footer-right mb-10">Premier Sushi</h2>
+                            <a href="https://www.instagram.com/_premier_sushi_/?hl=en"  class="footer-link inline-block">
+                                <span class="footer-text-link">Instagram</span>
+                                <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
+                                    <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                </svg>                          
+                            </a>                      
+                            <a href="https://www.facebook.com/PremierSushiOCB/" class="footer-link inline-block">
+                                <span  class="footer-text-link">Facebook</span>
+                                <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
+                                    <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                </svg>                        
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="footer_bottom">
-                <div class="footer_text">© 2023 Premier Sushi.</div>
-            </div>
-            
         </div>
     </footer>
-    <!-- END Footer -->
 
-    <!-- to top arrow start -->
+    <!--====================Scroll TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up"> 
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
         stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/>
         </svg> 
         Top
     </a>    
-    <!-- to top arrow end -->
 
     <!-- scripts
     ================================================== -->
 	<script src="js/swiper-bundle.min.js"></script>
+  
   	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
   	<script src="js/main.js"></script>
- 
+    <script>
+
+    </script>
 
 </body>
 
