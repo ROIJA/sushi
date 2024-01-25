@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+  	<title>Premier Sushi</title>
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+
+  	<link rel="manifest" href="site.webmanifest">
+ 	<link rel="apple-touch-icon" href="icon.png">
+  	<!-- favicon.ico  -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.png">
+    <!-- CSS -->
+  	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+	<link rel="stylesheet" href="css/LineIcons.css">
+   	<link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/test.css">            
+   	<link rel="stylesheet" href="css/base.css">
+  	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--==================== HEADER ====================-->	
+<header class="nav--1">
+    <div class="nav-bar">
+        <div class="main-container nav_bar_items_wrapper">
+            <div class="nav-bar-wrapper">
+                <a href="javascript:void(0)" class="logo-link inline-block">
+                	<div class="hide-on-mobile"><img src="img/logo.svg" class="img" width="110" ></div>
+                    <div class="site-name">Sushi.Hibachi.Ramen</div>
+                </a>
+                <div class="hide-on-mobile">
+                	<ul class="top-menu">
+                        <li><a href='index' class="nav-btn inline-block">Home</a></li>
+                        <li class="dropdown">
+                            <a href='javascript:void(0)' class="nav-btn inline-block">Menus
+                                <span class='toggle'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" 
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                                </span>
+                            </a>                            
+                            <ul class="dropdown-menu">
+                            
+                            	<li class="dropdown">
+                                	<a href='javascript:void(0)' class="nav-btn inline-block">Portland 
+                                    	<span class='toggle2'>
+                                        	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                                            	stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/>
+                                            </svg>
+                                        </span>
+                                    </a>        
+                                  <ul class="dropdown-menu">
+                                	<li><a href='theheist_menu' class="nav-btn inline-block">The Heist</a></li>
+                                  </ul>
+                                </li><!-- end Portland dropdown -->
+                            	<li class="dropdown">
+                                	<a href='javascript:void(0)' class="nav-btn inline-block">Oregon City
+                                    	<span class='toggle2'>
+                                        	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" 
+                                            	stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/>
+                                            </svg>
+                                        </span>
+                                    </a>        
+                                  <ul class="dropdown-menu">
+                                	<li><a href='oregoncitybrewing_menu' class="nav-btn inline-block">Oregon City Brewing</a></li>
+                                	<li><a href='corner14_menu' class="nav-btn inline-block">Corner 14</a></li>
+                                    <li><a href='happyvalleystation_menu' class="nav-btn inline-block">Happy Valley Station</a></li>
+                                  </ul>
+                                </li><!-- end Oregon dropdown -->
+                                                                
+                                <li><a href='battleground_menu' class="nav-btn inline-block">Battleground, WA</a></li>
+                                <li><a href='oaktreestation_menu' class="nav-btn inline-block">Oak Tree Station</a></li>
+                                <li><a href='troutdalestation_menu' class="nav-btn inline-block">Troutdale Station</a></li>
+                            </ul>
+                        </li><!-- end of #menus -->
+                        
+                        <li><a href='locations' class="nav-btn inline-block">Locations</a></li>
+                        <li><a href='foods' class="nav-btn inline-block">Our Foods</a></li>
+                        <li><a href='about' class="nav-btn inline-block">About Us</a></li>
+                        <li><a href='contact' class="nav-btn inline-block">Contact</a></li>                        
+                	</ul>
+                </div>
+
+                <!-- menu button hide-on-desktop -->
+                <aside class="">
+                	<div class="nav-btn menu-trigger inline-block">
+                        <div class="menu-trigger-label">Menu</div>
+                        <a class="menu-trigger-icon">
+                            <svg width="80" height="8" viewBox="0 0 80 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="80" height="1" fill="currentcolor"></rect>
+                            <rect y="6.5" width="80" height="1" fill="currentcolor"></rect>
+                            </svg>
+                        </a>
+                    </div>
+               </aside>
+               <!-- end of menu button -->   
+            </div>
+        </div>
+    </div>
+    
+    <!-- mobile menu -->   
+    <div class="mobile-menu-positioner">
+        <div class="main-container">
+            <div class="mobile-menu-parent">
+                <aside id="modal" class="slide-menu shadow-small">
+                    <div class="hide-on-desktop"><img src="img/logo.svg" class="image-19"></div>
+                    <a class="nav-btn menu-trigger-icon close-menu inline-block">
+                        <div class="menu-trigger-label close">Close</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" 
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    	</svg>                    
+					</a>                    
+                    <div class="menu menu-drawer--btn-group">
+                        <ul>
+                            <li>
+                                <a href="index" class=""><div>Home</div></a>
+                            </li>              
+                            <!-- menus -->
+                            <li class="has-children">
+                                <a href="javascript:void(0)" class="inline-block"><div>Menus</div></a>
+                                <ul class="children">
+                                    <li class="has-children">
+                                        <a href="javascript:void(0)">Portland</a>
+                                        <ul class="children">
+                                            <li>
+                                                <a href="theheist_menu" class="">The Heist – Premier Hibachi & Ramen</a>
+                                                <div class="mini-text">4727 SE Woodstock Blvd. Portland, OR 97206</div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="javascript:void(0)">Oregon City</a>
+                                        <ul class="children">
+
+                                        	<li>
+                                                <a href="oregoncitybrewing_menu">Oregon City Brewing – Premier Sushi</a>
+                                                <div class="mini-text">1401 Washington St. Oregon City, OR 97045</div>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="corner14_menu">Corner 14 – Premier Hibachi & Ramen</a>
+                                                <div class="mini-text">Corner 14, 508 14th Street, Oregon City, OR 97045</div>
+                                            </li>
+                                            <li>
+                                            	<a href="happyvalleystation_menu">Happy Valley Station</a>
+                                                <div class="mini-text">13551 SE 145th Ave, Happy Valley, Oregon 97015</div>
+                                            </li>
+                                        </ul>
+                                    </li>                                    
+                                    <li><a href="battleground_menu">Battleground – Premier Sushi</a>
+                                        <div class="mini-text">11117 NE 189th St, Battle Ground, WA 98604</div>
+                                    </li>
+                                    <li><a href="oak_tree_station_menu">Oak Tree Station – Premier Hibachi & Ramen</a>
+	                                    <div class="mini-text">NW LAKE RD & NW FRIBERG-STRUNK ST, CAMAS, WA 98607 </div>
+                                    </li>
+                                    <li>
+                                       	<a href="troutdalestation_menu">Troutdale Station</a>
+                                        <div class="mini-text">151 SW 257th Dr ﻿Troutdale, OR</div>
+                                    </li>
+
+                                </ul>
+                            </li> 
+                            <!-- // END menus -->                            
+                            <li><a href="locations"><div>locations</div></a></li>
+                            <li><a href="foods"><div>Our Foods</div></a></li>
+                            <li><a href="contact"><div>About Us</div></a></li>
+                            <li><a href="contact"><div>Contact</div></a></li>
+                        </ul>
+                    </div><!-- menu-drawer--btn-group -->
+                    
+                    <div class="menu-drawer--btn-group">
+                        <div class="mobile-menu--btn-group--header">
+                            <div>Social</div>
+                            <div class="svg-icon w-embed">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                             <title>Social</title>
+                             <g fill="none" stroke="currentcolor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                             <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle>
+                             <circle cx="18" cy="19" r="3"></circle>
+                             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                             </svg>
+                            </div>
+                        </div>
+                        <a href="/" target="_blank" class="inline-block">
+                            <div>Instagram</div>
+                        </a>
+                        <a href="/" target="_blank" class="inline-block">
+                            <div>Facebook</div>
+                        </a>
+                    </div><!-- menu-drawer--btn-group -->
+                    
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->   
+    <div  class="backdrop"></div>
+</header>
+
+    <!--====== LOCATION HERO PART START ======-->
+    <section id="locationHero" class="locationHero-area pt-100 bg-five">
+        <div class="container">
+            <!-- page title -->
+            <h2 class="heading-medium text-center text-transform--0 pt-50">Happy Valley Station <sup class="heading-small text-upper c--1">Menu</sup></h2>   
+            <p class="text-center f-ui-2 font-weight-500 c--1">Premier Sushi & Hibachi</p>
+            <!-- end of page title -->
+            
+                <div class="col-12">
+                    <div class="locationHero-active">
+                        <div class="single-locationHero">
+                            <img src="img/happyvalleystation.jpg" alt="the heist">
+                            <span class="main-btn">Oregon</span>
+                        </div> <!-- single showcase -->
+                        <div class="single-locationHero">
+                            <img src="img/location_01_1.jpg" alt="The heist">
+                            <span class="main-btn">Happy Valley Station</span>
+                        </div> <!-- single showcase -->
+                    </div> <!-- showcase active -->
+                </div>
+        </div> <!-- container -->
+    </section>
+
+    <!-- Menus location - section 
+    ================================================== --> 
+    <section class="locationMenus">
+        <div class="main-container">
+
+            <div class="info-title">
+            	<h1 class="fromLeft">Menus &#8212;
+              		Oregon  </h1>
+         	 </div>
+          
+            <div class="locationMenus-content-wrapper">
+                <div class="locationMenus-cols">
+                    <div class="locationMenus-left">
+                        <p class="heading is-footer">Happy Valley Station</p>
+                        <div>
+                           
+                         <div class="paragraph-text">13551 SE 145th Ave, Happy Valley, Oregon 97015.</div>
+                           
+                         <a href="tel:+1 123 4560789" class="tel-info is-footer w-inline-block"><div>TEL: +1 123 4560789</div></a>
+                        </div>
+                        <p class="heading is-footer font-32">Hours</p>
+                        <!--
+                        <p style="font-size: 0.97rem;">
+                            <span style="letter-spacing: 0.15rem; color: #020202;">
+                                <span style="color: var(--text-grey);">■ Mon - Thu</span> : 4:00pm - 9:00pm<br>
+                                <span style="color: var(--text-grey);">■ Fri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;: 4:00pm - 10:00pm<br>
+                                <span style="color: var(--text-grey);">■ Sat/Sun</span> :&nbsp;4:00pm - 10:00pm
+                            </span>
+                        </p> -->                   
+                        <div class="hours">
+                            <p><span>■ Mon - Thu</span> <i>: 11am - 9pm </i></p>
+                            <p><span>■ Fri</span> <i>: 11am - 9pm </i></p>
+                            <p><span>■ Sat/Sun</span> <i>: 11am - 9pm</i></p>
+                        </div>                     
+                    </div>
+                    
+                    <div class="locationMenus-right">
+                        <div class="locationMenus-link-group">
+                            <a href="/0" target="_self" data-cursor="1" rel="" class="btn-normal"><div>Order Pickup</div></a>
+                            <a href="/0" target="_self" data-cursor="1" rel="" class="btn-normal modal-btn"><div>Order Delivery</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Modal [ Delicery App ] -->
+	<div id="AppModal" class="modal">
+    	<div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h4 class="text-color-white">Order Delivery App</h4>
+            </div>
+            <div class="modal-body">
+            	<p>Concerning Online Orders:</p>
+                <p>
+                  If you would like to order <em>CATERING EVENTS</em>, please contact at Tel: 123 456 - 789.
+                  <br> Thank You!
+                </p><br>
+                <pre>
+                <a class="btn text-black text-2xl" href="https://www.grubhub.com/restaurant/premier-sushi-1401-washington-st-oregon-city" target="_blank">Grub Hub</a>
+                <a class="btn text-black text-2xl" href="https://www.doordash.com/store/premier-sushi-oregon-city-23594300" target="_blank" >Door Dash</a>
+                <a class="btn text-black text-2xl" href="https://www.ubereats.com/store/premier-sushi/" target="_blank">Uber Eats</a>
+                </pre>
+            </div>
+            <div class="align-items-center">  
+            	<span class="closeBtn2">Close</span>
+            </div>
+		
+    	</div><!-- /.modal-content -->
+	</div>
+	<!--END-->    
+   
+    <!-- Menus tabs - section 
+    ================================================== --> 
+    <section class="pb-100">        
+             
+        <div class="text-center pt-50">
+            <button class="active btn" id="a">
+                <span class="tab-title"> Sushi Rolls, Burritos, Ramen</span>
+            </button>
+            <button class="btn" id="b">
+                <span class="tab-title"> Bowls, Donuts, Burgers</span>
+            </button>
+            <button class="btn" id="c">
+                <span class="tab-title"> Others</span>
+            </button>
+            <button class="btn" id="d">
+                <span class="tab-title"> Appitizer</span>
+            </button>
+        </div>
+    	<div class="spacer"></div>
+        
+        <div id="parent">
+	        
+            <!-- start Box--1 --> 
+        	<div class="box--1 a section-menus">
+            
+            	<div class="menus-container">
+                    <!-- TOP -->
+
+                    <div class="top-menu-block shadow-xsmall">
+                        <!--<img src="img/hero_img3.jpg" loading="lazy" width="161" height="79" alt="" class="image-19" />-->
+                        <header class="flex items-center justify-between gap-2">
+                            <h2 class="text-2xl text-xl line-height-1">Sushi Rolls</h2>
+                            <div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs font-bold tabular-nums mr-1.5 px-2">
+                                All sushi rolls are cut into 10 pieces
+                            </div>
+                        </header>
+                        <ul class="ul">
+                            <li>
+                                <span>Krispy Krunchy </span>
+                                <span>Imitation crab, avocado, cucumber topped with imitation crab and crispy fried onion, crunchies, 
+                                spicy mayo and eel sauce. </span>
+                            </li>
+                            <li>
+                                <span>Fire Cracker</span>
+                                <span>*Spicy tuna, imitation crab, avocado, cucumber, crunchies, spicy mayo and eel sauce. </span>
+                            </li>
+                            <li>
+                                <span>Rainbow</span>
+                                <span>*Salmon, *tuna, Imitation crab, avocado, cucumber </span>
+                            </li>
+                            <li>
+                                <span>Fiery Sake</span>
+                                <span>*Seared salmon, imitation crab, aspargus, avocado and spicy mayo sauce. </span>
+                            </li>
+                            <li>
+                                <span>Dragon Fire</span>
+                                <span>*Spicy tuna, shrimp tempura, avocado, cucumber, crunchies, spicy mayo and eel sauce. </span>
+                            </li>
+                            <li>
+                                <span>Sunrise</span>
+                                <span>*Salmon, *spicy tuna, cream cheese, cucumber, green onion and spicy mayo sauce. </span>
+                            </li>
+            
+                            <li>
+                                <span>Black Dragon</span>
+                                <span>Eel, shrimp tempura, cream cheese, avocado, cucumber and eel sauce. </span>
+                            </li>
+                            <li>
+                                <span>Aloha LOVE</span>
+                                <span>*Tuna, imitation crab, pineapple, cucumber, avocado and spicy mayo sauce.</span>
+                            </li>                
+                            <li>
+                                <span>Oshizushi (Pressed sushi) 6 pieces</span>
+                                <span><small>Jambo roll</small></span>
+                                <span>Salmon, jalapeño, cream cheese, avocado, cucumber, spicy mayo and eel sauce.</span>
+                            </li>
+                            <li>
+                                <span>Jadeiter</span>
+                                <span><small>Jambo roll</small></span>
+                                <span>Asparagus tempura, jalapeño tempura, avocado, cucumber, green leaf, crunchies, sweet vege aoili 
+                                <br>- add *salmon/*tuna/*yellowtail +$3.
+                                </span>
+                            </li>
+                            <li>
+                                <span>Tempura Spider</span>
+                                <span><small>Jambo roll</small></span>
+                                <span>Softshell crab tempura, avocado, cucumber, green leaf, crunchies, spicy mayo and eel sauce. </span>
+                            </li>
+                            <li>
+                                <span>Lasvegas (Fried)</span>
+                                <span><small>Jambo roll</small></span>
+                                <span>Salmon, jalapeño, cream cheese, avocado, cucumber, spicy mayo and eel sauce.</span>
+                            </li>                
+                            <li>
+                                <span>Hurricane(Fried)</span>
+                                <span><small>Jambo roll</small></span>
+                                <span>Shrimp tempura, Imitation crab, cream cheese, cucumber, spicy mayo and eel sauce.</span>
+                            </li>                                                
+                        </ul>
+                        <h1 class="title-small">Classic rolls</h1>
+                        <ul class="ul">
+               
+                            <li>
+                                <span>Sweet Potato</span>
+                                <span>Sweet potato, cream cheese, avocado and sweet mayo sauce.</span>
+                            </li>
+                            <li>
+                                <span>Vegetable Roll</span>
+                                <span>Avocado, carrot, cucumber.</span>
+                            </li>
+                            <li>
+                                <span>Califonia Roll</span>
+                                <span>Imitation crab, avocado, cucumber.</span>
+                            </li>
+                            <li>
+                                <span>Phillydephia</span>
+                                <span>*Salmon, cream cheese, avocado.</span>
+                            </li>
+                            <li>
+                                <span>Spicy Salmon</span>
+                                <span>*Salmon, avocado, cucumber and spicy mayo sauce.</span>
+                            </li>
+                            <li>
+                                <span>Spicy Tuna</span>
+                                <span>*Spicy tuna, avocado, cucumber and spicy mayo sauce.</span>
+                            </li>
+                        </ul>            
+                    </div>
+                    <!-- end  TOP -->
+                    
+                    <div class="columns-5 w-row">
+                        
+                        <div class="column-10 w-col w-col-7 w-col-stack">
+
+                            <div class="div-block-32 shadow-small">
+                                <!--<img src="img/12.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1 ml-1.5">Burritos</h2>
+                                    <div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs mr-1.5 px-2">
+                                        sushi rice can be replaced with green leaf lettuce + $1.5 
+                                    </div>
+                                </header>
+                                
+                                <ul class="ul-2">
+                                    <li>
+                                        <span>California Plus</span>
+                                        <span>Imitation crab, avocado, cucmber, green leaf, spicy mayo and eel sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Spicy Combo</span>
+                                        <span>*Salmon, *spicy tuna, jalapeno, cucumber, green leaf and spicy mayo sauce. 
+                                        <small>{GF}</small></span>
+                                    </li>
+                                    <li>
+                                        <span>Shrimp Killer</span>
+                                        <span>Shrimp Tempura, ebi shrimp, imitation crab, cucumber, carrot, crunchies and sweet mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>King Dragon</span>
+                                        <span>Eel, shrimp tempura, cream cheese, imitation crab, crunchies and eel sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Ultimate Three</span>
+                                        <span>*Salmon, *tuna, *yellowtail, avocado, green leaf, furikake, crunchies and spicy mayo sauce.
+                                        <small>{GF}</small></span>
+                                    </li>
+                                    <li>
+                                        <span>Bestie</span>
+                                        <span>*Salmon, *yellowtail, imitation crab, jalapeño tempura, avocado, crunchies and sweet mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Fuji Crunch</span>
+                                        <span>Shrimp tempura, imitation crab, cream cheese, green leaf, crunchies and sweet mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Pineapple Ahi</span>
+                                        <span>*Ahi Tuna, pineapple, avocado, seaweed salad and hawaiian poke sauce.<small>{GF}</small></span>
+                                    </li> 
+                                    <li>
+                                        <span>RedSpider</span>
+                                        <span>Softshell crab tempura, imitation crab, avocado, cucumber, green leaf, crunchies and spicy mayo sauce.</span>
+                                    </li>   
+                                    <li>
+                                        <span>Veggie Crunch</span>
+                                        <span>Tofu tempura, sweet potato, carrot, green leaf, red cabbage, furikake, crunchies and sweet chili sauce..<small>
+                                        {Vegan}</small></span>
+                                    </li>                                                                                                                                                  
+                                </ul>                                    
+                            </div>
+                        </div><!-- /.column-10 -->
+                        
+                        <div class="column-11 w-col w-col-5 w-col-stack">
+                            <div class="div-block-32 bg-five">
+                                <!--<img src="img/test.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1">Ramen</h2>
+                                </header>
+                                <ul class="ul-2">
+                                    <li>
+                                        <span>ToKyo Miso Ramen</span>
+                                        <span>Tokyo Miso Tare, Chef's special broth, Chashu, Soft-boiled egg, Black Kikurage Slice, Scallion.</span>
+                                    </li>
+                                    <li>
+                                        <span>Tonkotsu Ramen</span>
+                                        <span>Tonkotsu Tare, Chef's special broth, Chashu, Soft-boiled egg, Black Kikurage Slice, Adjitsuke Menma, Scallion.</span>
+                                    </li>
+                                    <li>
+                                        <span>Creamy Chicken Ramen</span>
+                                        <span>Creamy Chicken Tare, Chef's special broth, Grilled chicken, Soft-boiled egg, Mushroom, Adjitsuke Menma, Scallion.</span>
+                                    </li>
+                                    <li>
+                                        <span>Yuzu Shoyu Ramen</span>
+                                        <span>Yuzu Shoyu Tare with Togarashi, Chef's special broth, Chashu, Soft-boiled egg, 
+                                        Black Kikurage Slice, Adjitsuke Menma, Scallion.
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Tan Tan Spicy Ramen</span>
+                                        <span>*Tan Tan Spicy Tare, Chef's special broth, Chashu, Soft-boiled egg, Mushroom, Adjitsuke Menma, Scallion.</span>
+                                    </li>
+                                    <li>
+                                        <span>Veggie Creamy Ramen</span>
+                                        <span>Creamy Veggie Tare, Chef's special broth, Grilled Tofu, Black Kikurage Slice, Mushroom, Cabbage, Scallion. 
+                                        <small>{Vegan}</small>
+                                        </span>
+                                    </li>
+                                                                                                                                            
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-11 -->
+                     
+                    </div><!-- /.w-row -->
+                </div><!-- /.menus-container -->
+          	</div><!-- end of box--1 a -->
+            
+         	<!-- BOX B -->
+          	<div class="box--1 b section-menus">
+            	<div class="menus-container">
+
+                    <div class="columns-5 w-row">
+
+                        <div class="column-11 w-col w-col-8 w-col-stack">
+                            <div class="div-block-32 bg-primary">
+                    
+                                <!--<img src="img/hero_img3.jpg" loading="lazy" width="161" height="79" alt="" class="image-21" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1 ml-1.5">Sushi Bowls</h2>
+                                    <div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs mr-1.5 px-2">
+                                        Sushi rice can be replaced with mixed vegetable salad + $1.5
+                                    </div>
+                                </header>
+
+                                <ul class="ul">
+                                    <li>
+                                        <span>Spicy Ahi Tuna Poke</span>
+                                        <span>*Ahi tuna, avocado, cucumber, radish, seaweed salad, red cabbage, shredded nori and spicy mayo sauce.
+                                        <small> {GF}</small></span>
+                                    </li>
+                                    <li>
+                                        <span>Salmon Poke</span>
+                                        <span>*Salmon/Spicy salmon cubes, cucumber, edamame, radish, carrot, green onion, shredded nori and hawaiian poke sauce. 
+                                        <small>{GF}</small></span>
+                                    </li>
+                                    <li>
+                                        <span>Furikake Tofu Bowl</span>
+                                        <span>Tofu tempura, radish, cucumber, edamame, carrot, furikake and sweet chili sauce. <small>{Vegan}</small></span>
+                                    </li>
+                                    <li>
+                                        <span>Shrimp Tempura Bowl</span>
+                                        <span>Shrimp tempura / Salmon tempura +$2, 
+                                        sweet potato, imitation crab, cream cheese, avaocado and spicy mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Grilled Salmon Teriyaki</span>
+                                        <span>Grilled salmon, avocado, red cabbage, carrot, green onions and teriyaki sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Grilled Tuna Steak</span>
+                                        <span>*Grilled tuna steak, edamame, seaweed salad, carrot, radish, tataki seasoning, green onions and ponzu sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Marine Bowl</span>
+                                        <span>*Salmon, *spicy tuna, imitation crab, seaweed salad, cucumber and spicy mayo.</span>
+                                    </li>
+                                    <li>
+                                        <span>Teriyaki Spider Bowl</span>
+                                        <span>Soft shell crab tempura, imitation crab, edamame, green leaf, red cabbage and spicy teri aoili.</span>
+                                    </li> 
+                                    <li>
+                                        <span>Hawaiian Ahi Poke</span>
+                                        <span>*Ahi tuna, onion, pineapple, avocado, cucumber green onions and hawaiian poke sauce. <small>{GF}</small></span>
+                                    </li>   
+                                    <li>
+                                        <span>Kimchi Ika Poke</span>
+                                        <span>Squid tempura, kimchi, cucumber, seaweed salad and sesame oil.</span>
+                                    </li>                                                                                                                                                  
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-11 -->                    
+                        
+                         <div class="column-10 w-col w-col-4 w-col-stack">
+                            <div class="div-block-32 shadow-xsmall">
+                            
+                                <!--<img src="img/12.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1 ml-1.5">Sushi Donuts</h2>
+                                    <!--<div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs mr-1.5 px-2"></div>-->
+                                </header>
+                                
+                                <ul class="ul-2">
+                                    <li>
+                                        <span>Crunchy Spicy Tuna</span>
+                                        <span>*Spicy tuna, imitation crab, crunchies, spicy mayo and eel sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>CA Crunch</span>
+                                        <span>Imitation crab, crispy fried onion, spicy mayo and eel sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Alaskan</span>
+                                        <span>*Salmon, imitation crab, avocado and sesame seeds.</span>
+                                    </li>
+                                    <li>
+                                        <span>Flaming Salmon</span>
+                                        <span>*Seared salmon, imitation crab and spicy mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Niji</span>
+                                        <span>*Salmon, *tuna, imitation crab, avocado and seaweed salad.</span>
+                                    </li>
+                                    <li>
+                                        <span>Imperial tempura(fried)</span>
+                                        <span>Imitation crab, crunchies and sweet mayo sauce.</span>
+                                    </li>
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-10 -->
+                    </div><!-- /.w-row -->
+                
+                    <div class="columns-5 w-row">
+                        <div class="column-11 w-col w-col-12 w-col-stack">
+                            <div class="div-block-32 shadow-xxsmall bg-third">
+                                <!--<img src="img/test.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1">Sushi Burgers</h2>
+                                </header>
+                                <ul class="ul">
+                                    <li>
+                                        <span>Shrimp Tempura</span>
+                                        <span>Shirmp tempura, imitation crab, avocado, cucumber, radish, green leaf, 
+                                        crispy sushi rice buns, sweet potato and sweet mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Salmon & Spicy Tuna</span>
+                                        <span>**Salmon, *spicy tuna, seaweed salad, avocado, cucumber, green leaf, crispy sushi rice buns, 
+                                        sweet potato and spicy mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Softshell Crab Tempura</span>
+                                        <span>Softshell crab tempura, avocado, cucumber, red cabbage, green leaf, crispy sushi rice buns, 
+                                        sweet potato and spicy mayo sauce.</span>
+                                    </li>
+                                    <li>
+                                        <span>Tuna Tataki</span>
+                                        <span>*Seared tuna, avocado, cucmber, green onion, tataki seasoning, green leaf, crispy sushi rice buns, 
+                                        sweet potato and teriyaki sauce.</span>
+                                    </li>                                    
+                                    <li>
+                                        <span>Tofu Tempura</span>
+                                        <span>Tofu tempura, furikake, radish, avocado, cucumber, green leaf, crispy sushi rice buns, 
+                                        sweet potato and sweet chili sauce. <small>{Vegan}</small></span>
+                                    </li>
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-11 -->
+                     
+                    </div><!-- /.w-row -->                   
+                </div><!-- /.menus-container-->
+          	</div><!-- end of box--1 b -->
+
+            <!-- BOX C -->
+          	<div class="box--1 c section-menus">
+            	<div class="menus-container">
+
+                    <div class="columns-5 w-row">
+                        
+                        <div class="column-10 w-col w-col-8 w-col-stack">
+                            <div class="div-block-32 shadow-xsmall">
+                            
+                                <!--<img src="img/12.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1 ml-1.5">Nigiri & Sashimi</h2>
+                                    <!--<div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs mr-1.5 px-2"></div>-->
+                                </header>
+                                
+                                <ul class="ul">
+                                    <li>
+                                        <span>Tuna (Maguro)</span>
+                                        <span>- $5 (2pcs Nigiri) | $14 (6pcs Sashimi)</span>
+                                    </li>
+                                    <li>
+                                        <span>Seared Tuna</span>
+                                        <span>- $5.5 (2pcs Nigiri) | $15 (6pcs Sashimi)</span>
+                                    </li>
+                                    <li>
+                                        <span>Yellowtail (Hamachi)</span>
+                                        <span>- $5 (2pcs Nigiri) | $14 (6pcs Sashimi)</span>
+                                    </li>
+                                    <li>
+                                        <span>Salmon (Sake)</span>
+                                        <span>- $5 (2pcs Nigiri) | $14 (6pcs Sashimi)</span>
+                                    </li>
+                                    <li>
+                                        <span>Seared Salmon</span>
+                                        <span>- $5.5 (2pcs Nigiri) | $15 (6pcs Sashimi)</span>
+                                    </li>
+                                    <li>
+                                        <span>Shrimp (Ebi)</span>
+                                        <span>- $5 (2pcs Nigiri)</span>
+                                    </li>
+                                    <li>
+                                        <span>Eel (Unagi)</span>
+                                        <span>- $5 (2pcs Nigiri)</span>
+                                    </li>
+                                    <li>
+                                        <span>Omelet (Tamago)</span>
+                                        <span>- $4 (2pcs Nigiri)</span>
+                                    </li>
+                                    <li>
+                                        <span>Sweet Tofu (Inari)</span>
+                                        <span>- $4 (2pcs Nigiri)</span>
+                                    </li>  
+                                    <li>
+                                        <span>Avocado</span>
+                                        <span>- $4 (2pcs Nigiri)</span>
+                                    </li>                                                                                                                                                  
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-10 -->
+                        
+                        
+                        <div class="column-11 w-col w-col-4 w-col-stack">
+                            <div class="div-block-32 shadow-xsmall">
+                                <!--<img src="img/test.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1">Catering</h2>
+                                </header>
+                                <ul class="ul-2">
+                                    <li>
+                                        <span>Sliver Platter (50 pcs)</span>
+                                        <span>- 4 Sushi rolls + 10 Nigiri</span>
+                                    </li>
+                                    <li>
+                                        <span>Gold Platter (75 pcs)</span>
+                                        <span>- 6 Sushi rolls + 15 Nigiri</span>
+                                    </li>
+                                    <li>
+                                        <span>Platinum Platter (100 pcs)</span>
+                                        <span>- 8 Sushi rolls + 20 Nigiri</span>
+                                    </li>
+                                    <li>
+                                        <span>Diamond Platter (150 pcs)</span>
+                                        <span>- 14 Sushi rolls + 10 Nigiri</span>
+                                    </li>                                    
+                                    <li>
+                                        <span>Donut & Burger Platter</span>
+                                        <span>- 4 Donuts + 2 Burgers</span>
+                                    </li>
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-11 -->
+                     
+                    </div><!-- /.w-row -->
+                
+
+                </div><!-- /.menus-container-->
+            </div><!-- end of box--1 c -->
+            
+            <!-- BOX D -->
+          	<div class="box--1 d">
+            
+            	<div class="menus-container">
+
+                    <div class="columns-5 w-row">
+                        
+                        <div class="column-11 w-col w-col-8 w-col-stack">
+                            <div class="div-block-32 shadow-xsmall">
+                            
+                                <!--<img src="img/12.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1 ml-1.5">Appetizers</h2>
+                                    <!--<div class="text-mr flex shrink-0 items-center rounded-full border-2 px-2 py-1 text-xs mr-1.5 px-2"></div>-->
+                                </header>
+                                
+                                <ul class="ul-2">
+                                    <li>
+                                        <span>Veggie Gyoza</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Shrimp Gyoza</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Spring Roll</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Edamame</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Fried Edamame</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Miso Soup</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Seaweed Salad</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Mochi Ice Cream</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Calamari</span>
+                                        <span></span>
+                                    </li>  
+                                    <li>
+                                        <span>Vegetable Tempura</span>
+                                        <span>Add cream cheese tempura +$2</span>
+                                    </li>
+                                    <li>
+                                        <span>Shrimp Tempura</span>
+                                        <span></span>
+                                    </li>  
+                                    <li>
+                                        <span>Softshell Crab Tempura</span>
+                                        <span></span>
+                                    </li>                                      
+                                        <span>Salmon/Tuna Poke</span>
+                                        <span></span>
+                                    </li>  
+                                    <li>
+                                        <span>Grilled Teriyaki Tuna/Salmon</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Salmon Tempura</span>
+                                        <span></span>
+                                    </li>                                                                                                                                                                                                                            
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-10 -->
+                        
+                        
+                        <div class="column-11 w-col w-col-4 w-col-stack">
+                            <div class="div-block-32 shadow-xsmall">
+                                <!--<img src="img/test.jpg" loading="lazy" width="161" height="79" alt="" class="image-20" />-->
+                                <header class="flex items-center justify-between gap-2">
+                                    <h2 class="sub-title text-2xl text-xl line-height-1">Drinks</h2>
+                                </header>
+                                <ul class="ul">
+                                    <li>
+                                        <span>Royal Milk Tea</span>
+                                        <span>Hot or Cold</span>
+                                    </li>
+                                    <li>
+                                        <span>Matcha - Green Tea</span>
+                                        <span>Hot or Cold</span>
+                                    </li>
+                                    <li>
+                                        <span>Soda</span>
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        <span>Bottled Water</span>
+                                        <span></span>
+                                    </li>                                    
+                                </ul>                                  
+                            </div>
+                        </div><!-- /.column-11 -->
+                     
+                    </div><!-- /.w-row -->
+                
+
+                </div><!-- /.menus-container-->            
+            </div><!-- end of box--1 d -->
+          
+        
+          
+        </div><!-- /#parent -->
+    </section>
+    
+
+    
+
+    <!-- Footer - section
+    ================================================== -->
+    <!-- Footer - section
+    ================================================== -->
+    <footer class="footer-section">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="padding-vertical padding-large">
+                    <div class="layout-grid footer_top-wrapper">
+                        <div id="left_footer" class="footer_left-wrapper ">
+                            <div class="secondary"><a href="#" class="footer-text-link">contact@premier-sushi.com</a><br>© Premier Sushi 2023</div>
+                        </div>
+                        <div id="right_footer">
+                            <h2 class="heading-large text-color-white footer-right mb-10">Premier Sushi</h2>
+                            <a href="https://www.instagram.com/_premier_sushi_/?hl=en"  class="footer-link inline-block">
+                                <span class="footer-text-link">Instagram</span>
+                                <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
+                                    <g clip-path="url(#1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="1"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                </svg>                          
+                            </a>                      
+                            <a href="https://www.facebook.com/PremierSushiOCB/" class="footer-link inline-block">
+                                <span  class="footer-text-link">Facebook</span>
+                                <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                    style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
+                                    <g clip-path="url(#1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="1"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                </svg>                        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- to top arrow start -->
+    <a href="#" class="scrollup" id="scroll-up"> 
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/>
+        </svg> 
+        Top
+    </a>    
+    <!-- to top arrow end -->
+
+    <!-- scripts
+    ================================================== -->
+
+  	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+  	<script src="js/main.js"></script>
+    
+
+</body>
+
+
+</html>

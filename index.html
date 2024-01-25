@@ -29,7 +29,6 @@
                 	<div class="hide-on-mobile"><img src="img/logo.svg" class="img" width="110" ></div>
                     <div class="site-name">Sushi.Hibachi.Ramen</div>
                 </a>
-				<!--<div class="hide-on-mobile"><img src="img/logo.svg" class="img" width="123"></div>-->
                 <div class="hide-on-mobile">
                 	<ul class="top-menu">
                         <li><a href='index' class="nav-btn inline-block">Home</a></li>
@@ -51,8 +50,7 @@
                                         </span>
                                     </a>        
                                   <ul class="dropdown-menu">
-                                	<li><a href='the_heist_menu.html' class="nav-btn inline-block">The Heist</a></li>
-                                	<li><a href='the_zed_menu.html' class="nav-btn inline-block">The ZED</a></li>
+                                	<li><a href='theheist_menu' class="nav-btn inline-block">The Heist</a></li>
                                   </ul>
                                 </li><!-- end Portland dropdown -->
                             	<li class="dropdown">
@@ -64,19 +62,21 @@
                                         </span>
                                     </a>        
                                   <ul class="dropdown-menu">
-                                	<li><a href='the_heist_menu' class="nav-btn inline-block">Oregon City Brewing</a></li>
-                                	<li><a href='the_zed_menu' class="nav-btn inline-block">Corner 14</a></li>
+                                	<li><a href='oregoncitybrewing_menu' class="nav-btn inline-block">Oregon City Brewing</a></li>
+                                	<li><a href='corner14_menu' class="nav-btn inline-block">Corner 14</a></li>
+                                    <li><a href='happyvalleystation_menu' class="nav-btn inline-block">Happy Valley Station</a></li>
                                   </ul>
                                 </li><!-- end Oregon dropdown -->
                                                                 
                                 <li><a href='battleground_menu' class="nav-btn inline-block">Battleground, WA</a></li>
-                                <li><a href='oak_tree_station_menu' class="nav-btn inline-block">Oak Tree Station</a></li>
-                                <li><a href='canby_beer_menu' class="nav-btn inline-block">Canby Beer library</a></li>
+                                <li><a href='oaktreestation_menu' class="nav-btn inline-block">Oak Tree Station</a></li>
+                                <li><a href='troutdalestation_menu' class="nav-btn inline-block">Troutdale Station</a></li>
                             </ul>
                         </li><!-- end of #menus -->
                         
                         <li><a href='locations' class="nav-btn inline-block">Locations</a></li>
                         <li><a href='foods' class="nav-btn inline-block">Our Foods</a></li>
+                        <li><a href='about' class="nav-btn inline-block">About Us</a></li>
                         <li><a href='contact' class="nav-btn inline-block">Contact</a></li>                        
                 	</ul>
                 </div>
@@ -124,15 +124,9 @@
                                         <a href="javascript:void(0)">Portland</a>
                                         <ul class="children">
                                             <li>
-                                                <a href="the_heist_menu" class="">The Heist – Premier Hibachi & Ramen</a>
+                                                <a href="theheist_menu" class="">The Heist – Premier Hibachi & Ramen</a>
                                                 <div class="mini-text">4727 SE Woodstock Blvd. Portland, OR 97206</div>
                                             </li>
-                                        
-                                            <li>
-                                                <a href="corner14_menu">The ZED – Premier Sushi</a>
-                                                <div class="mini-text">5716 SE 92nd Avenue, Portland OR 97266</div>
-                                            </li>
-
                                         </ul>
                                     </li>
                                     <li class="has-children">
@@ -140,7 +134,7 @@
                                         <ul class="children">
 
                                         	<li>
-                                                <a href="oregon_city_menu">Oregon City Brewing – Premier Sushi</a>
+                                                <a href="oregoncitybrewing_menu">Oregon City Brewing – Premier Sushi</a>
                                                 <div class="mini-text">1401 Washington St. Oregon City, OR 97045</div>
                                             </li>
                                         
@@ -148,7 +142,10 @@
                                                 <a href="corner14_menu">Corner 14 – Premier Hibachi & Ramen</a>
                                                 <div class="mini-text">Corner 14, 508 14th Street, Oregon City, OR 97045</div>
                                             </li>
-
+                                            <li>
+                                            	<a href="happyvalleystation_menu">Happy Valley Station</a>
+                                                <div class="mini-text">13551 SE 145th Ave, Happy Valley, Oregon 97015</div>
+                                            </li>
                                         </ul>
                                     </li>                                    
                                     <li><a href="battleground_menu">Battleground – Premier Sushi</a>
@@ -157,8 +154,9 @@
                                     <li><a href="oak_tree_station_menu">Oak Tree Station – Premier Hibachi & Ramen</a>
 	                                    <div class="mini-text">NW LAKE RD & NW FRIBERG-STRUNK ST, CAMAS, WA 98607 </div>
                                     </li>
-                                    <li><a href="canby_beer_menu">Canby Beer Library – Premier Sushi</a>
-	                                    <div class="mini-text">292 N Holly St Canby OR 97013</div>
+                                    <li>
+                                       	<a href="troutdalestation_menu">Troutdale Station</a>
+                                        <div class="mini-text">151 SW 257th Dr ﻿Troutdale, OR</div>
                                     </li>
 
                                 </ul>
@@ -166,6 +164,7 @@
                             <!-- // END menus -->                            
                             <li><a href="locations"><div>locations</div></a></li>
                             <li><a href="foods"><div>Our Foods</div></a></li>
+                            <li><a href="contact"><div>About Us</div></a></li>
                             <li><a href="contact"><div>Contact</div></a></li>
                         </ul>
                     </div><!-- menu-drawer--btn-group -->
@@ -275,7 +274,7 @@
                     <line x1="9" y1="2.18561e-08" x2="9" y2="17" stroke="#8390A2"></line>
                     <line x1="17" y1="9" x2="-4.37114e-08" y2="9" stroke="#8390A2"></line>
                 </svg>        
-                <a class="item_link" href="#intro" title="Scroll &amp; discover" target="_self" data-cursor="1" rel="" data-scroll-to="">
+                <a class="item_link page-scroll" href="#locations" title="Scroll &amp; discover" target="_self" data-cursor="1" rel="" data-scroll-to="">
                     <span class="btn_label">Scroll &amp; discover</span>
                     <div class="btn_bg" data-label="Scroll &amp; discover"></div>
                 </a>              		
@@ -284,210 +283,181 @@
         
         <div class="c_media" style="translate: none; rotate: none; scale: none; transform: translate(0px); opacity: 1;">
             <picture class="media_img img-crop">
-            <img src="img/hero4.jpg" alt="" class=" ls-is-cached lazyloaded" loading="lazy" />
+            <img src="img/hero4.jpg" alt="" class=" ls-is-cached lazyloaded reveal" loading="lazy" />
             </picture>	
-           	<!--
-            <video autoplay="" muted="" loop="" class="media_img" id="hero_video">
-            	<source src="img/Hero.mp4" type="video/mp4">
-            </video>             
-           	-->	
         </div><!-- //.c_media  -->
 
 	</section>
-</div>
-
-    <!-- marquee - Section 
-    ==================================================  u-comp-def--2 --> 
-    <!--
-    <section class="marquee u-comp-def--2" data-comp="marquee">
-      <div class="marquee_content text-grey">
-        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>    
-        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>    
-        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen.</span>
-        <span class="marquee_text"> •  Premier. Sushi. Hibachi. Ramen..</span>    
-      </div>
-    </section>  
- 	 -->  
-  
-    <!-- About - Section 
-    ================================================== -->    
-    <section id="intro" class="section_about">
-        <div class="page-padding">
-            <div class="container-large">
-                <div class="space-content">
-                    
-                    <div class="flex-0">
-                        <h2 class="heading-large orange">About Premier Sushi</h2>
-                        <div class="text-size-large margin-xs"> 
-                        	Our food cart was founded to provide an authentic <span class="hover-text"> Japanese sushi and hibachi </span> 
-                            experience that combines traditional techniques with a modern twist.                            
-                        </div>
-                    </div><!-- /.flex-1 -->            
-                                
-                    <div class="grid first">
-                   		<div class="spacer"></div>
-                        <p class="text-size-large">
-							We use only the freshest ingredients and take
-                            great care in preparing each dish with precision and attention to detail.                        
-                            <br class="mb-20">
-                            Our menu features a variety of <span class="hover-text">sushi rolls,</span> 
-                            <span class="hover-text">burritos,</span> 
-                            <span class="hover-text">bowls,</span>
-                            <span class="hover-text">burgers</span>  <span class="hover-text">and donuts,</span>
-                            and hibachi Japanese grill menus. Whether you're a sushi/hibachi lover or trying it for the first time, 
-                            we have something for everyone. Our chefs are always experimenting with new flavors and ingredients to keep the menu exciting and fresh.
-                            <br class="mb-20" />
-                            At our food cart, we believe that great food should be paired with excellent service. 
-                            Our staff is knowledgeable, friendly, and always willing to go the extra mile to ensure that our customers have a 
-                            wonderful dining experience.
-                            <br class="mb-20">
-                            We also offer catering services for events and special occasions. Whether you're planning a corporate event or a birthday party, 
-                            we can provide delicious sushi platters and other Japanese specialties that will impress your guests.<br><br>
-                           <small class="heading orange">Thank you for choosing us. We look forward to serving you soon!</small><br>
-                        </p>
-                        <div id="right_svg" class="sticky first">
-                            <div class="cubes w-embed">
-                            	<img src="img/right_svg.svg">		
-                        	</div>
-                        </div><!-- /#right_div --> 
-                    </div><!-- /.grid first -->
-                </div> <!-- /.space-content -->  
-            </div><!-- /.container-large -->  
-        </div><!-- /.page-padding -->
-    </section>
+</div><!-- /.page-padding --> 
 
     <!-- Order - bottom part
     ================================================== -->  
 	<div class="page-padding">
-        <div class="order pb-100 container-small">
+        <div class="pb-100 main-container align-items-center">
         <!-- flex-1 pb-100 <h2 class="heading-large" style="color: var(--earth);">Make Order</h2> -->
-        
-         	<div> 
+         	<div class="order"> 
+                <a href="locations" target="_self" data-cursor="1" rel="" class="btn-round primary w-inline-block">
+                    <div>Walk-ins Welcome <span class="las la-smile"></span></div>
+                </a>
+                
                 <a href="/#" target="_self" data-cursor="1" rel="" class="btn-round w-inline-block">
                     <div>Order Pickup <span class="las la-thumbs-up"></span></div>
                 </a>
                 
-                <a href="/#" target="_self" data-cursor="1" rel="" class="btn-round primary w-inline-block">
+                <a href="#deliveryApp" target="_self" data-cursor="1" rel="" class="btn-round primary w-inline-block">
                     <div>Order Delivery <span class="las la-truck"></span></div>
-                  </a>
+                </a>
          </div> 
         </div><!-- /.order -->            
 	</div><!-- /.page-padding --> 
    
     <div class="spacer"></div>
-    
+
+
     <!-- Location - section { bg-secondary }
     ================================================== -->
-	<section class="location-section location-element location-carousel col-mr-0 flex">
+	<section id="locations" class="section-location padding-xxl">
     
-        <div class="location-header">
-            <h3 class="heading-large text-grey">Locations</h2>
-            <p class="font-heading f-ui-2">Premier Sushi - locations</p>
-            <a href="locations" class="button--1 -color--1 mt-8">
-                <span class="btn_label">Visit us&nbsp;</span>            
-            </a>            
-        </div>
-            
-    	<div class="location-container">
-            <div class="location-row">
-				<div class="location-column location-element"> 
-	               	<div class="location-widget-wrap">
+	    <h2 class="heading-location pb-50">Our Foodcarts Locations</h2>
+        
+		<div class="container-location">
+            <div class="location-list-4">
 
-	        	         <div class="location-element location-widget--carouselslider">
-                           	<div class="location-widget-container">
-	                           	<div class="carousel-slider-wrapper relative swiper-container swiper-container-initialized swiper-container-horizontal" 
-                                data-speed="2000" data-auto="false">
-	                            	<div class="swiper-wrapper image-slider" style="transform: translate3d(-1124.4px, 0px, 0px); transition-duration: 0ms;">
-                                          	
-                                    	<div class="swiper-slide" style="margin-right: 30px;">
-                                        	<div class="swiper-slide-img-holder no-link">
-                                              	<img src="img/location_01.jpg" class="image-slide-img lazyload" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">01</p>
-                                            <p class="swiper-slide-caption-text">The Heist</p>
-                                            <span><b class="text-grey">&nbsp;Premier Hibachi & Ramen</b>, Portland.</span>
-                                        </div><!-- /.swiper-slide -->
-                                                
-                                        <div class="swiper-slide" style="margin-right: 30px;">
-                                        	<div class="swiper-slide-img-holder no-link">
-                                            	<img src="img/location_02.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">02</p>
-                                            <p class="swiper-slide-caption-text">The ZED</p>
-                                            <span><b>&nbsp;Premier Sushi</b>, Portland.</span>
-                                        </div><!-- /.swiper-slide -->
-                                                                                        
-                                        <div class="swiper-slide" style="margin-right: 30px;">
-                                        	<div class="swiper-slide-img-holder no-link">
-                                              	<img src="img/location_03.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">03</p>
-                                            <p class="swiper-slide-caption-text">Oregon City Brewing</p>
-                                            <span><b>&nbsp;Premier Sushi</b>, Oregon City, OR.</span>
-                                        </div><!-- /.swiper-slide -->
-                                        
-                                        <div class="swiper-slide" style="margin-right: 30px;">
-                                            <div class="swiper-slide-img-holder no-link">
-                                             	<img src="img/location_04.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">04</p>
-                                            <p class="swiper-slide-caption-text">Corner 14</p>
-                                            <span><b>&nbsp; Premier Hibachi & Ramen</b>, Oregon City, OR.</span>
-                                        </div><!-- /.swiper-slide -->                                        
-                                            
-                                        <div class="swiper-slide" style="margin-right: 30px;">
-                                            <div class="swiper-slide-img-holder no-link">
-                                             	<img src="img/location_05.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">05</p>
-                                            <p class="swiper-slide-caption-text">Battleground</p>
-                                            <span><b>&nbsp; Premier Sushi</b>, Battleground, WA.</span>
-                                        </div><!-- /.swiper-slide -->
-                                        
-                                        <div class="swiper-slide" style="margin-right: 30px;">
-                                            <div class="swiper-slide-img-holder no-link">
-                                             	<img src="img/location_06.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">06</p>
-                                            <p class="swiper-slide-caption-text">Oak Tree Station</p>
-                                            <span><b>&nbsp; Premier Hibachi & Ramen</b>, Camas, WA.</span>
-                                        </div><!-- /.swiper-slide -->
-                                        
-                                         <div class="swiper-slide" style="margin-right: 30px;">
-                                            <div class="swiper-slide-img-holder no-link">
-                                             	<img src="img/location_07.jpg" class="image-slide-img" alt="" loading="lazy">
-                                            </div>
-                                            <p class="swiper-slide-number">07</p>
-                                            <p class="swiper-slide-caption-text">Canby Beer Library</p>
-                                            <span><b>&nbsp; Premier Sushi</b>, Canby, OR.</span>
-                                        </div><!-- /.swiper-slide -->
-                                                                                           
-                                    </div><!-- /.swiper-wrapper -->
-                                	<div class="clear"></div>
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                                </div><!-- /.carousel-slider-wrapper -->
-                                        
-                                <div class="swiper-scrollbar swiper-scrollbar-Carousel-1">
-                                	<div class="swiper-scrollbar-drag"></div>
-                               	</div><!-- /.swiper-scrollbar -->
-                                
-                            </div><!-- /.location-widge-container-->
-                	   	</div><!-- /.location-element -->
-            	    </div><!-- /.location-wiget-wrap -->
-              	</div><!-- /.location-colum -->
-        	</div><!-- /.location-row -->
-        </div><!--/. location-container -->
+            	<!-- listitem -->
+                <div role="listitem" class="location-item-3">
+					<a class="location-wrapper w-inline-block" href="theheist">  
+                        <div class="location-hover page">
+                            <h4><b>The Heist</b>&nbsp;&nbsp; 4727 SE Woodstock Blvd. Portland, OR 97206.</h4>
+                            <div class="div-block-4">
+                                <div>Premier Sushi & Ramen</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/location/the_heist01.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                
+                <div class="location-item-3">
+					<a class="location-wrapper w-inline-block" href="happyvalleystation">  
+                        <div class="location-hover page">
+                            <h4><b>Happy Valley Station</b>&nbsp;&nbsp; 13551 SE 145th Ave, Happy Valley, Oregon 97015. </h4>
+                            <div class="div-block-4">
+                                <div>Premier Sushi & Ramen</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/location/happyvalleystation01.jpg');" class="location-image"></div> 
+                    </div>
+                </div>
+                
+                <div class="location-item-3">
+					<a class="location-wrapper w-inline-block" href="oregoncitybrewing">  
+                        <div class="location-hover page">
+                            <h4><b>Oregon City Brewing</b>&nbsp;&nbsp; Oregon City Brewing, Food Cart Pod 1401 Washington Street, Oregon City,Oregon 97045.</h4>
+                            <div class="div-block-4">
+                                <div>Premier Sushi</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/oregoncitybrewing.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                <div class="location-item-3">
+                    <a class="location-wrapper w-inline-block" href="corner14">     
+                        <div class="location-hover page">
+                            <h4><b>Corner 14</b>&nbsp;&nbsp; 508 14th Street, Oregon City, OR 97045. </h4>
+                            <div class="div-block-4">
+                                <div>Premier Hibachi & Ramen</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+							</div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image:url('img/location/corner1401.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                
+                <div class="location-item-3">
+                    <a target="_blank" class="location-wrapper w-inline-block" href="/0" >
+                        <div class="location-hover page">
+                            <h4><b>Battleground</b>&nbsp;&nbsp; 11117 NE 189th St, Battle Ground, WA 98604.</h4>
+                            <div class="div-block-4">
+                                <div>Premier Sushi</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/battleground.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                <div class="location-item-3">
+                    <a href="/0" target="_blank" class="location-wrapper w-inline-block" style="">
+                        <div class="location-hover page">
+                            <h4><b>Oak Tree Station</b>&nbsp;&nbsp; NW LAKE RD & NW FRIBERG-STRUNK ST, CAMAS, WA 98607.</h4>
+                            <div class="div-block-4">
+                                <div>Premier Hibachi & Ramen</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/oaktreestation.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                <div class="location-item-3">
+                    <a href="/0" target="_blank" class="location-wrapper w-inline-block" style="">
+                        <div class="location-hover page">
+                            <h4><b>Troutdale Station</b>&nbsp;&nbsp; 151 SW 257th Dr, Troutdale, OR.</h4>
+                            <div class="div-block-4">
+                                <div>Premier Sushi</div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.23682 1H12.9998V12.88" stroke="#9A9A9A"/><path d="M0.999989 12.46L12.7629 1.65997" stroke="#9A9A9A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="div-block hide-mobile-landscape">
+                        <div style="background-image: url('img/location/troutdalestation01.jpg');" class="location-image"></div>
+                    </div>
+                </div>
+                
+            </div><!-- /.location-list-4 -->
+        </div><!-- /.container-location -->
+
+        <div class="div-block-13 pt-50 mb-20 mt-10">
+            <a href="locations" class="button--1 -color--1 mb-20">
+            	<span class="btn_label">Find a Location Near You</span>            
+            </a>
+        </div>    
 	</section>
-    
 
+    
     <!-- Our Foods - section
     ================================================== -->
-    
 	<section class="food-grid u-z-index--1 u-z-index--0 pt-50 bg-hero" data-comp="food-grid"><!-- u-comp-def--1 -->
 
 		<div class="ml-10 page-padding">
 			<h2 class="heading-large text-grey">Our Foods</h2>
-			<p class="font-32 text-white">Discover our foods.</p>
+            <p class="font-32 text-white">&nbsp;Discover our foods and explore our delicious menu.</p>
 		</div>
          
   		<div class="food_grid-wrapper food_grid-wrapper u-wrapper u-wrapper--pad u-wrapper--1"> 
@@ -509,18 +479,6 @@
 							lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
                         </p>      
                       </div>
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
                       <div class="food_item-tabs">
                         <div class="food_item-tab">rolls</div>
                         <div class="food_item-tab">classic</div>
@@ -553,18 +511,7 @@
                           from 45 BC, making it over 2000 years old. 
                         </p>      
                       </div>
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
+
                       <div class="food_item-tabs">
                         <div class="food_item-tab">Combo</div>
                         <div class="food_item-tab">Superme</div>
@@ -592,18 +539,7 @@
                          such as fish and vegetables in a wrap and serving like a burrito.                         
  						</p>      
                       </div>
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
+
                       <div class="food_item-tabs">
                         <div class="food_item-tab">ramen</div>      
                         <div class="food_item-tab">no Msg</div>
@@ -633,18 +569,6 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>      
                       </div>
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
                       <div class="food_item-tabs">
                         <div class="food_item-tab">Sushi donut</div>
                         <div class="food_item-tab">gluten free</div>
@@ -672,19 +596,6 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>      
                       </div>
-                      
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
                       <div class="food_item-tabs">
                         <div class="food_item-tab">sushi</div>
                         <div class="food_item-tab">glutern free</div>
@@ -711,19 +622,6 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>      
                       </div>
-                      
-                      <!--
-                      <div class="food_item-link">
-                        <a class="food_link" href="/#" title="visit link" target="_blank" data-cursor="1" rel=" noopener">
-                            <span class="btn_label">visit link</span>
-                            <svg class="link_icon" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.56086 1.37088H3.01288V0.516113H6.00456V3.50779H5.14979V1.99058L3.04963 4.09074L2.44531 3.48642L4.56086 1.37088Z" fill="black">
-                            </path>
-                            <path d="M2.5643 1.34939H0V6.47798H5.12859V3.91368H4.27383V5.62322H0.854765V2.20415H2.5643V1.34939Z" fill="black"></path>
-                            </svg>
-                            <div class="btn_bg" data-label="/#"></div>
-                        </a>      
-                      </div>-->
                       <div class="food_item-tabs">
                         <div class="food_item-tab">tuna</div>
                         <div class="food_item-tab">yellowtail</div>
@@ -760,7 +658,8 @@
     <!-- Delivery App logos - section 
     ================================================== -->
     <section id="deliveryApp" class="section">
-    <div class="page-padding">
+    <div class="page-padding pt-100">
+    	<h2 class="heading-medium text-center">Order Delivery</h2><br>
         <div id="logos" class="wrap w-1080">
             <div>
                 <p>To figure out what you have to order from our menus.</p>
@@ -769,26 +668,30 @@
             <div class="logos-list">
                 <!-- GrubHub -->  							
                 <div>
-                    <a class="item_link" href="doordash.link" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">    
-    <svg width="150px" height="130px"  fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16.708 9.556h-.84c-.048 0-.072.048-.072.072v1.828h-.84V9.628c0-.048-.048-.072-.072-.072h-.84c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.876h.84v1.876c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072V9.628c0-.024-.024-.072-.072-.072m-7.08 0h-.84c-.048 0-.072.024-.072.072v3.324a.61.61 0 0 1-.12.384c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.61.61 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072h-.84c-.048 0-.072.024-.072.072v3.348c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108V9.628c-.004-.024-.028-.072-.08-.072m-8.232-.072c-.432 0-.796.144-1.036.408C.096 10.156 0 10.54 0 11v2c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108v-1.104a.102.102 0 0 0-.096-.096H1.468a.102.102 0 0 0-.096.096v.82c0 .048.048.096.096.096h.316v.192a.676.676 0 0 1-.12.408c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.69.69 0 0 1-.12-.408v-1.976c0-.168.048-.316.12-.408.072-.096.168-.12.288-.12.116 0 .216.048.288.12.072.096.12.24.12.408v.192c0 .048.048.072.072.072h.84c.048 0 .072-.024.072-.072v-.192c0-.432-.096-.84-.36-1.108-.216-.292-.604-.436-1.012-.436m10.832 3.828c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12.079.104.121.23.12.36.008.2-.016.316-.092.416zm-.364-2.768c.12 0 .216.024.288.12.072.072.096.192.096.34s-.024.264-.096.36a.385.385 0 0 1-.264.12h-.432v-.94h.408zm.964 1.372c.144-.144.408-.48.408-.916 0-.508-.192-.82-.34-.988-.264-.288-.624-.432-1.036-.432h-1.316c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.396c.432 0 .84-.168 1.108-.508.144-.192.316-.508.316-.988-.028-.576-.388-.916-.536-1.008zm-7.652-.46c-.072.096-.192.144-.34.144h-.408v-1.056h.408c.144 0 .264.048.34.144.096.096.12.216.12.384s-.02.288-.12.384zm.532.868c.096-.072.168-.12.24-.216.168-.192.384-.532.384-1.06 0-.508-.192-.84-.384-1.036-.24-.288-.6-.432-1.012-.456H3.54c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.736h.288l.532 1.78c0 .024.048.048.072.048h.888c.024 0 .048-.024.072-.024s.024-.048.024-.072l-.62-1.992zm17.136.988c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12.079.104.121.23.12.36.028.2-.016.316-.092.416zm-.34-2.768c.12 0 .216.024.288.12.072.072.096.192.096.34s-.024.264-.096.36a.385.385 0 0 1-.264.12h-.432v-.94h.408zm.964 1.372c.144-.144.408-.48.408-.916 0-.508-.192-.82-.34-.988-.264-.288-.624-.432-1.036-.432h-1.328c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.404c.432 0 .84-.168 1.108-.508.144-.192.316-.508.316-.988a1.442 1.442 0 0 0-.532-1.008zm-3.224-2.36h-.84c-.048 0-.072.024-.072.072v3.324a.61.61 0 0 1-.12.384c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.61.61 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072H17.6c-.048 0-.072.024-.072.072v3.348c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108V9.628c.024-.024-.024-.072-.076-.072"></path></g></svg>
+                    <a class="item_link" href="https://www.grubhub.com/restaurant/premier-sushi-1401-washington-st-oregon-city" target="_blank" data-cursor="1">    
+    <svg width="150px" height="130px"  fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+    <title>GrabHub</title>
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16.708 9.556h-.84c-.048 0-.072.048-.072.072v1.828h-.84V9.628c0-.048-.048-.072-.072-.072h-.84c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.876h.84v1.876c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072V9.628c0-.024-.024-.072-.072-.072m-7.08 0h-.84c-.048 0-.072.024-.072.072v3.324a.61.61 0 0 1-.12.384c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.61.61 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072h-.84c-.048 0-.072.024-.072.072v3.348c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108V9.628c-.004-.024-.028-.072-.08-.072m-8.232-.072c-.432 0-.796.144-1.036.408C.096 10.156 0 10.54 0 11v2c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108v-1.104a.102.102 0 0 0-.096-.096H1.468a.102.102 0 0 0-.096.096v.82c0 .048.048.096.096.096h.316v.192a.676.676 0 0 1-.12.408c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.69.69 0 0 1-.12-.408v-1.976c0-.168.048-.316.12-.408.072-.096.168-.12.288-.12.116 0 .216.048.288.12.072.096.12.24.12.408v.192c0 .048.048.072.072.072h.84c.048 0 .072-.024.072-.072v-.192c0-.432-.096-.84-.36-1.108-.216-.292-.604-.436-1.012-.436m10.832 3.828c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12.079.104.121.23.12.36.008.2-.016.316-.092.416zm-.364-2.768c.12 0 .216.024.288.12.072.072.096.192.096.34s-.024.264-.096.36a.385.385 0 0 1-.264.12h-.432v-.94h.408zm.964 1.372c.144-.144.408-.48.408-.916 0-.508-.192-.82-.34-.988-.264-.288-.624-.432-1.036-.432h-1.316c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.396c.432 0 .84-.168 1.108-.508.144-.192.316-.508.316-.988-.028-.576-.388-.916-.536-1.008zm-7.652-.46c-.072.096-.192.144-.34.144h-.408v-1.056h.408c.144 0 .264.048.34.144.096.096.12.216.12.384s-.02.288-.12.384zm.532.868c.096-.072.168-.12.24-.216.168-.192.384-.532.384-1.06 0-.508-.192-.84-.384-1.036-.24-.288-.6-.432-1.012-.456H3.54c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.736h.288l.532 1.78c0 .024.048.048.072.048h.888c.024 0 .048-.024.072-.024s.024-.048.024-.072l-.62-1.992zm17.136.988c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12.079.104.121.23.12.36.028.2-.016.316-.092.416zm-.34-2.768c.12 0 .216.024.288.12.072.072.096.192.096.34s-.024.264-.096.36a.385.385 0 0 1-.264.12h-.432v-.94h.408zm.964 1.372c.144-.144.408-.48.408-.916 0-.508-.192-.82-.34-.988-.264-.288-.624-.432-1.036-.432h-1.328c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.404c.432 0 .84-.168 1.108-.508.144-.192.316-.508.316-.988a1.442 1.442 0 0 0-.532-1.008zm-3.224-2.36h-.84c-.048 0-.072.024-.072.072v3.324a.61.61 0 0 1-.12.384c-.072.096-.168.12-.288.12a.405.405 0 0 1-.288-.12.61.61 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072H17.6c-.048 0-.072.024-.072.072v3.348c0 .432.096.84.36 1.108.264.264.624.408 1.036.408.432 0 .796-.144 1.036-.408.264-.264.36-.648.36-1.108V9.628c.024-.024-.024-.072-.076-.072"></path></g></svg>
                     </a>
                 </div>
                 <!-- UberEats -->             
                 <div>
-                    <a class="item_link" href="doordash.link" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">    
-                    <svg width="200" height="100" fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Ubereats</title> <path d="M12.835 21.225c1.25 0.012 2.258 1.028 2.258 2.28 0 0.010-0 0.019-0 0.029v-0.001c0 0.001 0 0.002 0 0.003 0 1.242-1.007 2.25-2.25 2.25-0.011 0-0.021-0-0.032-0l0.002 0c-1.254-0.006-2.269-1.024-2.269-2.28 0-1.259 1.021-2.28 2.28-2.28 0.004 0 0.008 0 0.012 0h-0.001zM27.29 19.663c-1.981 0-3.374 0.804-3.374 2.356 0 1.076 0.766 1.776 2.419 2.118l1.809 0.411c0.712 0.137 0.903 0.323 0.903 0.613 0 0.462-0.547 0.753-1.409 0.753-1.095 0-1.721-0.238-1.965-1.059h-1.916c0.274 1.538 1.445 2.562 3.809 2.562h0.003c2.189 0 3.427-1.023 3.427-2.441 0-1.007-0.731-1.76-2.26-2.083l-1.617-0.326c-0.939-0.17-1.235-0.342-1.235-0.682 0-0.446 0.452-0.719 1.287-0.719 0.903 0 1.565 0.241 1.757 1.059h1.896c-0.107-1.535-1.237-2.561-3.533-2.561zM12.58 19.653c-0.007-0-0.016-0-0.024-0-2.142 0-3.878 1.736-3.878 3.878s1.736 3.878 3.878 3.878c0.039 0 0.078-0.001 0.117-0.002l-0.006 0c0.011 0 0.025 0 0.038 0 0.894 0 1.715-0.314 2.358-0.837l-0.007 0.005v0.665h1.896v-7.389h-1.886v0.657c-0.643-0.532-1.476-0.854-2.384-0.854-0.006 0-0.011 0-0.017 0h0.001zM19.2 17.745v2.107h-1.439v1.672h1.443v3.928c0 0 0 0.001 0 0.001 0 0.987 0.8 1.787 1.787 1.787 0.075 0 0.149-0.005 0.222-0.014l-0.009 0.001h2.053l-0.008-1.672h-1.426c-0.435 0-0.714-0.189-0.714-0.58v-3.459h2.14v-1.664h-2.132v-2.107zM1.004 17.233v9.962h7.151v-1.708h-5.219v-2.463h5.079v-1.642h-5.079v-2.444h5.219v-1.705zM14.187 8.423c0.008-0 0.018-0 0.028-0 1.395 0 2.526 1.131 2.526 2.526s-1.131 2.526-2.526 2.526c-1.395 0-2.526-1.131-2.526-2.526 0-0.692 0.279-1.32 0.73-1.776l-0 0c0.452-0.457 1.076-0.742 1.767-0.75h0.002zM22.508 8.416c0.009-0 0.020-0 0.031-0 1.114 0 2.044 0.791 2.258 1.842l0.003 0.015h-4.521c0.214-1.056 1.128-1.842 2.228-1.857l0.002-0zM30.26 7.237c-0.005-0-0.011-0-0.017-0-0.718 0-1.346 0.379-1.697 0.948l-0.005 0.009v-0.898h-1.453v7.277h1.467v-4.138c-0.006-0.053-0.009-0.115-0.009-0.177 0-0.923 0.745-1.672 1.667-1.678h0.619v-1.341c-0.197 0.002-0.398-0.001-0.571-0.002zM22.558 7.153c-0.001 0-0.003 0-0.004 0-2.093 0-3.789 1.696-3.789 3.789s1.696 3.789 3.789 3.789c0.053 0 0.106-0.001 0.159-0.003l-0.008 0c0.023 0.001 0.051 0.001 0.079 0.001 1.27 0 2.398-0.606 3.111-1.545l0.007-0.010-1.062-0.772c-0.47 0.653-1.229 1.073-2.085 1.073-0.018 0-0.035-0-0.052-0.001l0.003 0c-0.009 0-0.021 0-0.032 0-1.221 0-2.235-0.889-2.429-2.054l-0.002-0.014h6.021v-0.473c0.002-0.042 0.003-0.092 0.003-0.142 0-2.010-1.629-3.639-3.639-3.639-0.024 0-0.048 0-0.071 0.001l0.004-0zM10.205 4.584v9.989h1.453v-0.914c0.676 0.676 1.611 1.095 2.643 1.095 0.001 0 0.002 0 0.003 0h-0c0.031 0.001 0.069 0.001 0.106 0.001 2.101 0 3.804-1.703 3.804-3.804s-1.703-3.804-3.804-3.804c-0.037 0-0.074 0.001-0.111 0.002l0.005-0c-0.001 0-0.002 0-0.002 0-1.028 0-1.959 0.418-2.63 1.095l-0 0v-3.659zM1.004 4.584v6.245c-0.003 0.055-0.004 0.119-0.004 0.183 0 2.060 1.67 3.73 3.73 3.73 0.045 0 0.090-0.001 0.134-0.002l-0.006 0c0.017 0 0.037 0 0.057 0 1.028 0 1.958-0.419 2.63-1.095l0-0v0.928h1.514v-9.989h-1.527v6.166c0.003 0.046 0.005 0.099 0.005 0.153 0 1.38-1.119 2.499-2.499 2.499s-2.499-1.119-2.499-2.499c0-0.054 0.002-0.107 0.005-0.16l-0 0.007v-6.166z"></path> </g></svg>
+                    <a class="item_link" href="https://www.ubereats.com/store/premier-sushi/" target="_blank" data-cursor="1">    
+                    <svg width="200" height="100" fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <title>DoorDash</title>
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Ubereats</title> <path d="M12.835 21.225c1.25 0.012 2.258 1.028 2.258 2.28 0 0.010-0 0.019-0 0.029v-0.001c0 0.001 0 0.002 0 0.003 0 1.242-1.007 2.25-2.25 2.25-0.011 0-0.021-0-0.032-0l0.002 0c-1.254-0.006-2.269-1.024-2.269-2.28 0-1.259 1.021-2.28 2.28-2.28 0.004 0 0.008 0 0.012 0h-0.001zM27.29 19.663c-1.981 0-3.374 0.804-3.374 2.356 0 1.076 0.766 1.776 2.419 2.118l1.809 0.411c0.712 0.137 0.903 0.323 0.903 0.613 0 0.462-0.547 0.753-1.409 0.753-1.095 0-1.721-0.238-1.965-1.059h-1.916c0.274 1.538 1.445 2.562 3.809 2.562h0.003c2.189 0 3.427-1.023 3.427-2.441 0-1.007-0.731-1.76-2.26-2.083l-1.617-0.326c-0.939-0.17-1.235-0.342-1.235-0.682 0-0.446 0.452-0.719 1.287-0.719 0.903 0 1.565 0.241 1.757 1.059h1.896c-0.107-1.535-1.237-2.561-3.533-2.561zM12.58 19.653c-0.007-0-0.016-0-0.024-0-2.142 0-3.878 1.736-3.878 3.878s1.736 3.878 3.878 3.878c0.039 0 0.078-0.001 0.117-0.002l-0.006 0c0.011 0 0.025 0 0.038 0 0.894 0 1.715-0.314 2.358-0.837l-0.007 0.005v0.665h1.896v-7.389h-1.886v0.657c-0.643-0.532-1.476-0.854-2.384-0.854-0.006 0-0.011 0-0.017 0h0.001zM19.2 17.745v2.107h-1.439v1.672h1.443v3.928c0 0 0 0.001 0 0.001 0 0.987 0.8 1.787 1.787 1.787 0.075 0 0.149-0.005 0.222-0.014l-0.009 0.001h2.053l-0.008-1.672h-1.426c-0.435 0-0.714-0.189-0.714-0.58v-3.459h2.14v-1.664h-2.132v-2.107zM1.004 17.233v9.962h7.151v-1.708h-5.219v-2.463h5.079v-1.642h-5.079v-2.444h5.219v-1.705zM14.187 8.423c0.008-0 0.018-0 0.028-0 1.395 0 2.526 1.131 2.526 2.526s-1.131 2.526-2.526 2.526c-1.395 0-2.526-1.131-2.526-2.526 0-0.692 0.279-1.32 0.73-1.776l-0 0c0.452-0.457 1.076-0.742 1.767-0.75h0.002zM22.508 8.416c0.009-0 0.020-0 0.031-0 1.114 0 2.044 0.791 2.258 1.842l0.003 0.015h-4.521c0.214-1.056 1.128-1.842 2.228-1.857l0.002-0zM30.26 7.237c-0.005-0-0.011-0-0.017-0-0.718 0-1.346 0.379-1.697 0.948l-0.005 0.009v-0.898h-1.453v7.277h1.467v-4.138c-0.006-0.053-0.009-0.115-0.009-0.177 0-0.923 0.745-1.672 1.667-1.678h0.619v-1.341c-0.197 0.002-0.398-0.001-0.571-0.002zM22.558 7.153c-0.001 0-0.003 0-0.004 0-2.093 0-3.789 1.696-3.789 3.789s1.696 3.789 3.789 3.789c0.053 0 0.106-0.001 0.159-0.003l-0.008 0c0.023 0.001 0.051 0.001 0.079 0.001 1.27 0 2.398-0.606 3.111-1.545l0.007-0.010-1.062-0.772c-0.47 0.653-1.229 1.073-2.085 1.073-0.018 0-0.035-0-0.052-0.001l0.003 0c-0.009 0-0.021 0-0.032 0-1.221 0-2.235-0.889-2.429-2.054l-0.002-0.014h6.021v-0.473c0.002-0.042 0.003-0.092 0.003-0.142 0-2.010-1.629-3.639-3.639-3.639-0.024 0-0.048 0-0.071 0.001l0.004-0zM10.205 4.584v9.989h1.453v-0.914c0.676 0.676 1.611 1.095 2.643 1.095 0.001 0 0.002 0 0.003 0h-0c0.031 0.001 0.069 0.001 0.106 0.001 2.101 0 3.804-1.703 3.804-3.804s-1.703-3.804-3.804-3.804c-0.037 0-0.074 0.001-0.111 0.002l0.005-0c-0.001 0-0.002 0-0.002 0-1.028 0-1.959 0.418-2.63 1.095l-0 0v-3.659zM1.004 4.584v6.245c-0.003 0.055-0.004 0.119-0.004 0.183 0 2.060 1.67 3.73 3.73 3.73 0.045 0 0.090-0.001 0.134-0.002l-0.006 0c0.017 0 0.037 0 0.057 0 1.028 0 1.958-0.419 2.63-1.095l0-0v0.928h1.514v-9.989h-1.527v6.166c0.003 0.046 0.005 0.099 0.005 0.153 0 1.38-1.119 2.499-2.499 2.499s-2.499-1.119-2.499-2.499c0-0.054 0.002-0.107 0.005-0.16l-0 0.007v-6.166z"></path> </g></svg>
                     </a>
                 </div>
                 <!-- DoorDash -->                              
                 <div>
-                    <a class="item_link" href="doordash.link" target="_blank" rel="nofollow noopener noreferrer" data-cursor="1">                
-    <svg width="200" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DoorDash</title><path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H.584A.589.589 0 00.17 6.184L3.894 9.93a1.752 1.752 0 001.242.516h12.049a1.554 1.554 0 11.031 3.108H8.91a.589.589 0 00-.415 1.003l3.725 3.747a1.75 1.75 0 001.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413" fill="#000"/></svg> 
+                    <a class="item_link" href="https://www.grubhub.com/restaurant/premier-sushi-1401-washington-st-oregon-city" target="_blank" data-cursor="1">    
+                    <svg width="200" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DoorDash</title><path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H.584A.589.589 0 00.17 6.184L3.894 9.93a1.752 1.752 0 001.242.516h12.049a1.554 1.554 0 11.031 3.108H8.91a.589.589 0 00-.415 1.003l3.725 3.747a1.75 1.75 0 001.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413" fill="#000"/></svg> 
     				</a>              
                 </div>
             </div><!-- end of logo-list -->
       
         </div><!-- #logos --> 
-        </div>       
+    </div>       
     </section>
 
     <!-- Follow Area Start - section 
@@ -797,10 +700,10 @@
 	
         <!-- Follow Area Start -->
 		<div class="text-center pt-50">
-        	<h2 class="heading">Lift off with us on social.</h2><!--Lift off with us on social-->
+        	<h2 class="heading text-grey">Lift off with us on social.</h2><!--Lift off with us on social-->
             <p class="mb-10"><a href="#" target="_blank" rel="noreferrer noopener">@premier_sushi</a>&nbsp;&nbsp;#premier_sushi</p>
             <a class="instagram_logo" href="#" target="_blank" rel="noreferrer nofollow">
-                            
+            
             	<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                   	<title>Instagram logo</title>
                    <path fill="currentColor"
@@ -832,6 +735,8 @@
           </article>-->
         </div>
     </section>
+
+    
     
     <!-- Footer - section
     ================================================== -->
@@ -849,16 +754,16 @@
                                 <span class="footer-text-link">Instagram</span>
                                 <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
                                     style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                    <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
-                                    </path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                    <g clip-path="url(#1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="1"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
                                 </svg>                          
                             </a>                      
                             <a href="https://www.facebook.com/PremierSushiOCB/" class="footer-link inline-block">
                                 <span  class="footer-text-link">Facebook</span>
                                 <svg class="btn_arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" 
                                     style="translate: none; rotate: none; scale: none; transform-origin: 0% 100% 0px; transform: translate(0px);">
-                                    <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
-                                    </path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
+                                    <g clip-path="url(#1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 1H0V0h15v15h-1V1.75l-13 13L.25 14l13-13Z" fill="#fff">
+                                    </path></g><defs><clipPath id="1"><path fill="#fff" d="M0 0h15v15H0z"></path></clipPath></defs>
                                 </svg>                        
                             </a>
                         </div>
@@ -878,8 +783,7 @@
 
     <!-- scripts
     ================================================== -->
-	<script src="js/swiper-bundle.min.js"></script>
-  
+
   	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
   	<script src="js/main.js"></script>
